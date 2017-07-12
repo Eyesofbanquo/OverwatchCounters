@@ -1,0 +1,6 @@
+framework module Pods_OverwatchCounters {
+  umbrella header "Pods-OverwatchCounters-umbrella.h"
+
+  export *
+  module * { export * }
+}

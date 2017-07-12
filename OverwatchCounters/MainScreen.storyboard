@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="big_noodle_titling.ttf">
+            <string>BigNoodleTitling</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Heroes-->
+        <scene sceneID="d45-6J-BX4">
+            <objects>
+                <viewController storyboardIdentifier="MainScreen" id="VZ6-HW-AD9" customClass="MainScreenViewController" customModule="OverwatchCounters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R49-x7-wLG"/>
+                        <viewControllerLayoutGuide type="bottom" id="UOC-Ke-ZD5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEh-SY-79b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M3s-ZL-Oen">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hero_cell" rowHeight="89" id="Hmx-6L-Juy" customClass="HeroTableViewCell" customModule="OverwatchCounters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hmx-6L-Juy" id="Kjk-lH-lHE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-Pw-r07">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="89"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="McCree" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45b-Tx-zdy">
+                                                    <rect key="frame" x="268" y="34" width="99" height="47"/>
+                                                    <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="45"/>
+                                                    <color key="textColor" red="0.027450980390000001" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="45b-Tx-zdy" secondAttribute="trailing" constant="8" id="EMO-gI-N3S"/>
+                                                <constraint firstItem="45b-Tx-zdy" firstAttribute="top" secondItem="Kjk-lH-lHE" secondAttribute="topMargin" constant="26" id="EmZ-HD-P87"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="45b-Tx-zdy" secondAttribute="bottom" constant="-0.5" id="PJ6-gd-Bfq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="heroImage" destination="d0h-Pw-r07" id="GGJ-tT-F4n"/>
+                                            <outlet property="name" destination="45b-Tx-zdy" id="8eX-kt-Pn8"/>
+                                            <segue destination="nkv-2w-Zi7" kind="show" identifier="hero_detail" id="qo9-9N-UvZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="M3s-ZL-Oen" secondAttribute="trailing" constant="-16" id="07x-q7-rjZ"/>
+                            <constraint firstItem="M3s-ZL-Oen" firstAttribute="top" secondItem="R49-x7-wLG" secondAttribute="bottom" constant="-64" id="dPh-lf-5K5"/>
+                            <constraint firstItem="UOC-Ke-ZD5" firstAttribute="top" secondItem="M3s-ZL-Oen" secondAttribute="bottom" id="dcf-HV-WBF"/>
+                            <constraint firstItem="M3s-ZL-Oen" firstAttribute="leading" secondItem="NEh-SY-79b" secondAttribute="leadingMargin" constant="-16" id="oRL-Ms-icl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Heroes" id="AsT-dW-99O"/>
+                    <connections>
+                        <outlet property="tableView" destination="M3s-ZL-Oen" id="mW2-C9-6k3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHy-1O-OdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="-0.44977511244377816"/>
+        </scene>
+        <!--HeroDetail-->
+        <scene sceneID="hnd-on-A2e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HeroDetail" id="nkv-2w-Zi7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wud-Os-GNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="-60.26986506746627"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v2e-cK-dQW">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationMainScreen" automaticallyAdjustsScrollViewInsets="NO" id="Zom-AN-Ax0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6g-qX-7Ds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VZ6-HW-AD9" kind="relationship" relationship="rootViewController" id="2kc-0a-6R6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDj-1t-nSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61.600000000000001" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>

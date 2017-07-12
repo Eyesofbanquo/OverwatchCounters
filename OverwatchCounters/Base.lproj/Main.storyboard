@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="big_noodle_titling.ttf">
+            <string>BigNoodleTitling</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="OverwatchCounters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-th-aJo">
+                                <rect key="frame" x="156" y="293" width="102" height="38"/>
+                                <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overwatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-2U-yhK">
+                                <rect key="frame" x="104" y="220" width="207" height="65"/>
+                                <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUp-fk-1xL" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                <rect key="frame" x="136" y="469" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="X0v-Pg-qLH"/>
+                                    <constraint firstAttribute="width" constant="20" id="otG-ca-uH5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.1450980392" green="0.55294117649999996" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-eD-xj0" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                <rect key="frame" x="197" y="469" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="HWy-AM-0HF"/>
+                                    <constraint firstAttribute="width" constant="20" id="qva-Up-aqa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.1450980392" green="0.55294117649999996" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tf-AX-mdo" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                <rect key="frame" x="258" y="469" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LV9-4u-4zw"/>
+                                    <constraint firstAttribute="width" constant="20" id="lwi-wf-ki8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.1450980392" green="0.55294117649999996" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.62745098039215685" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4K-eD-xj0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fx2-Nn-hvt"/>
+                            <constraint firstItem="ptg-2U-yhK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="KC5-Kr-1Yu"/>
+                            <constraint firstItem="ptg-2U-yhK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDj-Na-BNG"/>
+                            <constraint firstItem="8G9-th-aJo" firstAttribute="top" secondItem="ptg-2U-yhK" secondAttribute="bottom" constant="8" id="X89-aQ-jBL"/>
+                            <constraint firstItem="8G9-th-aJo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZXs-Lu-yUh"/>
+                            <constraint firstItem="w4K-eD-xj0" firstAttribute="leading" secondItem="gUp-fk-1xL" secondAttribute="trailing" constant="41" id="bWt-AJ-FKz"/>
+                            <constraint firstItem="gUp-fk-1xL" firstAttribute="top" secondItem="4tf-AX-mdo" secondAttribute="top" id="c2P-RQ-nqz"/>
+                            <constraint firstItem="4tf-AX-mdo" firstAttribute="top" secondItem="w4K-eD-xj0" secondAttribute="top" id="dDz-7P-i1z"/>
+                            <constraint firstItem="w4K-eD-xj0" firstAttribute="top" secondItem="8G9-th-aJo" secondAttribute="bottom" constant="138" id="ebR-Dj-n6w"/>
+                            <constraint firstItem="4tf-AX-mdo" firstAttribute="leading" secondItem="w4K-eD-xj0" secondAttribute="trailing" constant="41" id="gc6-LZ-NV6"/>
+                            <constraint firstItem="gUp-fk-1xL" firstAttribute="top" secondItem="w4K-eD-xj0" secondAttribute="top" id="jm0-lJ-NDI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftLoadCircle" destination="gUp-fk-1xL" id="kwX-eF-G67"/>
+                        <outlet property="midLoadCircle" destination="w4K-eD-xj0" id="u8u-Vd-8DP"/>
+                        <outlet property="rightLoadCircle" destination="4tf-AX-mdo" id="FOf-mE-afV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="39.945652173913047"/>
+        </scene>
+    </scenes>
+</document>
