@@ -33,26 +33,9 @@ class HeroCircleView: UIView {
       }
     }
   }
-  
- /* @IBInspectable var labelHeight: CGFloat = 44.0 {
-    willSet {
-      if let label = heroLabel {
-        label.frame.size.height = newValue
-      }
-    }
-  }
-  
-  @IBInspectable var labelWidth: CGFloat = 50.0 {
-    willSet {
-      if let label = heroLabel {
-        label.frame.size.width = newValue
-      }
-    }
-  }*/
-  
-  
   var circleLayer: CAShapeLayer!
   var circleLayerPadding: CGFloat = 2.0
+  var viewForImageView: UIView!
   var imageView: UIImageView!
   var heroLabel: UILabel!
   
@@ -67,16 +50,20 @@ class HeroCircleView: UIView {
     
   }
   
-  //override func awakeFromNib
-  
   /// This function will display visible changes to the IBInspectable properties in the storyboard
   override func layoutSubviews() {
     super.layoutSubviews()
+    //self.viewForImageView.frame = bounds
+    //self.imageView.frame = bounds
+    if viewForImageView == nil || imageView == nil {
+      createImageView()
+      createHeroLabel()
+    }
     
-    
-    /*createImageView()
-    createCircleMask()
-    createHeroLabel()*/
+//    
+//    createImageView()
+//    createCircleMask()
+//    createHeroLabel()
 
   }
   
@@ -86,7 +73,7 @@ class HeroCircleView: UIView {
     self.addSubview(heroLabel)
     self.heroLabel.textAlignment = .center
     self.heroLabel.adjustsFontSizeToFitWidth = true
-    self.heroLabel.text = "Hero name"
+    //self.heroLabel.text = "Hero name"
     
     heroLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     heroLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
@@ -97,8 +84,14 @@ class HeroCircleView: UIView {
   }
   
   func createImageView() {
+    self.clipsToBounds = true
+    self.viewForImageView = UIView(frame: bounds)
     self.imageView = UIImageView(frame: bounds)
-    self.addSubview(imageView)
+    self.viewForImageView.addSubview(self.imageView)
+    self.viewForImageView.clipsToBounds = true
+    self.imageView.clipsToBounds = true
+    self.addSubview(self.viewForImageView)
+    //self.addSubview(imageView)
   }
   
   /// Create a square frame from any rectangular bound
@@ -121,13 +114,16 @@ class HeroCircleView: UIView {
     circleLayer.fillColor = UIColor.black.cgColor
     circleLayer.strokeColor = UIColor.black.cgColor
     circleLayer.lineWidth = 0.0
-    self.imageView.layer.mask = circleLayer
+    //self.viewForImageView.layer.mask = circleLayer
   }
   
   override func awakeFromNib() {
-    createImageView()
-    createCircleMask()
-    createHeroLabel()
+//    self.viewForImageView = UIView()
+//    self.imageView = UIImageView()
+    super.awakeFromNib()
+//    createImageView()
+//    createCircleMask()
+//    createHeroLabel()
   }
 
 }

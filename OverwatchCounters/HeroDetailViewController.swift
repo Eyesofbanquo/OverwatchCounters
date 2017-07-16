@@ -32,19 +32,28 @@ class HeroDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
+    self.weaknessStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
+    
     Measure.run {
       initialization()
     }
     
-    strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
-    weaknessStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
-    self.setCircles()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+
+    self.strengthStackView.layoutIfNeeded()
+    self.weaknessStackView.layoutIfNeeded()
+    self.setCircleVisibility()
     
     for v in topContainerView.subviews {
       if v is UIImageView {
         heroImageView = v as! UIImageView
         Measure.run(description: "Loading images") {
-          self.sharedImageCache == nil ? loadHeroImageFromURL() : loadHeroImageFromCoreData()
+          setHeroFeaturedImage()
         }
       }
     }
@@ -55,7 +64,7 @@ class HeroDetailViewController: UIViewController {
   }
   
   fileprivate func initialization() {
-    guard let heroName = self.hero?.name, let nav = self.navigationController else { return }
+    guard let heroName = self.hero?.name else { return }
     self.title = heroName
     
     detailInformation["strengths"] = []
@@ -66,7 +75,8 @@ class HeroDetailViewController: UIViewController {
     self.loadStrengthsWeaknesses()
   }
   
-  fileprivate func loadHeroImageFromCoreData() {
+  /// Sets the image for the top view container
+  fileprivate func setHeroFeaturedImage() {
     guard let hero = self.hero, let heroName = hero.name else { return }
     
     let fetchRequest = NSFetchRequest<HeroMO>(entityName: "Hero")
@@ -81,26 +91,6 @@ class HeroDetailViewController: UIViewController {
       
       self.heroImageView.center = topContainerView.center
     }
-  }
-  
-  /// Download the hero image from the HeroMO object. Using shared cache it may be simpler to just pull the image from the cache.
-  fileprivate func loadHeroImageFromURL() {
-    
-    guard heroImageView != nil, let h = self.hero, let heroImageURL = h.image, let url = URL(string: heroImageURL) else { return }
-    let task = URLSession.shared.dataTask(with: url, completionHandler: {
-      [weak self] data, response, error in
-      
-      guard let d = data, let strongSelf = self else { return }
-      if let image = UIImage(data: d) {
-        DispatchQueue.main.async {
-          strongSelf.heroImageView.image = image
-          strongSelf.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * strongSelf.imageScale
-          strongSelf.heroImageView.center = strongSelf.topContainerView.center
-
-        }
-      }
-    })
-    task.resume()
   }
   
   /// Load the weaknesses and strengths HeroMO objects from core data using the [String] in the HeroMO object
@@ -131,14 +121,39 @@ class HeroDetailViewController: UIViewController {
     }
   }
   
-  fileprivate func setCircles() {
+  /// Set which circles in the stack view are visible
+  fileprivate func setCircleVisibility() {
    
-    guard let hero = hero,
+    /*guard let hero = hero,
           let strArray = hero.strengths as? [String],
           let weakArray = hero.weaknesses as? [String]
-      else { return }
+      else { return }*/
+    let hero = self.hero!
+    var strArray: [String]
+    var weakArray: [String]
     
-    guard strArray.count <= 3, weakArray.count <= 3 else { return }
+    if hero.strengths == nil {
+      strArray = []
+      let frameWithinStackView = self.strengthStackView.frame
+      let convertedFrame = self.view.convert(frameWithinStackView, from: self.strengthStackView.superview!)
+      let view = UIView(frame: convertedFrame)
+      view.backgroundColor = .red
+      self.view.addSubview(view)
+      //self.view.insertSubview(view, aboveSubview: self.strengthStackView)
+    } else {
+      strArray = hero.strengths as! [String]
+    }
+    
+    if hero.weaknesses == nil {
+      weakArray = []
+      let frameWithinStackView = self.weaknessStackView.frame
+      let convertedFrame = self.view.convert(frameWithinStackView, from: self.weaknessStackView.superview!)
+      let view = UIView(frame: convertedFrame)
+      view.backgroundColor = .blue
+      self.view.addSubview(view)
+    } else {
+      weakArray = hero.weaknesses as! [String]
+    }
     
     if strArray.count < 3 {
       let endIndex = strArray.count
@@ -163,52 +178,21 @@ class HeroDetailViewController: UIViewController {
           let weaknessStackView = self.bottomContainerView.subviews[0].subviews[1] as? UIStackView
       else { return }
     
+    
+    
     loadCircleImages(from: strengthArray, for: strengthStackView)
-    //embeddedFunction(weaknessArray, weaknessStackView)
-
-//    for (index, value) in strengthArray.enumerated() {
-//      guard let name = value.name as NSString?,
-//            let imageCache = self.sharedImageCache
-//      else { return }
-//      
-//      let circle = strengthStackView.arrangedSubviews[index] as! HeroCircleView
-//      circle.heroLabel.text = name as String
-//      
-//      var image: UIImage?
-//      //If the image data exists them load it from the cache. If not then download the image with URLSession.shared
-//      if checkIfImageDataExists(name: name) {
-//        image = UIImage(data: imageCache.object(forKey: name)! as Data)
-//        circle.imageView.frame.size = image!.size
-//        circle.imageView.image = image
-//        
-//      } else {
-//        let heroURL = URL(string: strengthArray[index].image!)
-//        let task = URLSession.shared.dataTask(with: heroURL!, completionHandler: {
-//          [weak self] data, response, error in
-//          
-//          guard let strongSelf = self,
-//                let data = data
-//          else { return }
-//          let image = UIImage(data: data)
-//          
-//          DispatchQueue.main.async {
-//            circle.imageView.image = image
-//          }
-//        })
-//        task.resume()
-//      }
-//      
-//      
-//    }
+    //loadCircleImages(weaknessArray, weaknessStackView)
   }
   
   func loadCircleImages(from array: [HeroMO], for stackView: UIStackView) {
-    for (index, value) in array.enumerated() {
-      guard let name = value.name as NSString?,
-        let imageCache = self.sharedImageCache
-        else { return }
+    for (index, hero) in array.enumerated() {
+      guard let name = hero.name as NSString?,
+            let position = hero.circlePosition,
+            let imageCache = self.sharedImageCache
+      else { return }
       
       let circle = stackView.arrangedSubviews[index] as! HeroCircleView
+      //circle.layoutIfNeeded()
       circle.heroLabel.text = name as String
       
       var image: UIImage?
@@ -217,19 +201,22 @@ class HeroDetailViewController: UIViewController {
         image = UIImage(data: imageCache.object(forKey: name)! as Data)
         circle.imageView.frame.size = image!.size
         circle.imageView.image = image
+        circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
         
       } else {
         let heroURL = URL(string: array[index].image!)
         let task = URLSession.shared.dataTask(with: heroURL!, completionHandler: {
-          [weak self] data, response, error in
+          data, response, error in
           
-          guard let strongSelf = self,
-            let data = data
-            else { return }
-          let image = UIImage(data: data)
+          guard let data = data,
+                let image = UIImage(data: data)
+          else { return }
+          
           
           DispatchQueue.main.async {
+            circle.imageView.frame.size = image.size
             circle.imageView.image = image
+            circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
           }
         })
         task.resume()
@@ -254,16 +241,5 @@ class HeroDetailViewController: UIViewController {
 
     }
   }
-  
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
 
 }

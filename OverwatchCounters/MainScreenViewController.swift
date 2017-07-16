@@ -66,10 +66,10 @@ extension MainScreenViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let hero = self.fetchController.object(at: indexPath)
-    let heroStrengths = hero.strengths as! [String]
-    let heroWeaknesses = hero.weaknesses as! [String]
+    let heroStrengths = hero.strengths as? [String]
+    let heroWeaknesses = hero.weaknesses as? [String]
     
-    print("Hi, I'm \(hero.name!)!\n These are my strengths: \(heroStrengths)\nThese are my weaknesses: \(heroWeaknesses)")
+    //print("Hi, I'm \(hero.name!)!\n These are my strengths: \(heroStrengths)\nThese are my weaknesses: \(heroWeaknesses)")
     
   }
 }

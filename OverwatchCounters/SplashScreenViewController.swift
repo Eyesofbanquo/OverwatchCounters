@@ -73,10 +73,22 @@ class SplashScreenViewController: UIViewController {
             h.rowPosition = rowPosition
             h.circlePosition = rowPosition
             
-            if let heroStrengths = hero.object(forKey: "strengths") as? [String], let heroWeaknesses = hero.object(forKey: "weaknesses") as? [String] {
+            if hero.object(forKey: "strengths") == nil {
+              h.strengths = nil
+            } else {
+              h.strengths = hero.object(forKey: "strengths") as! NSArray
+            }
+            
+            if hero.object(forKey: "weaknesses") == nil {
+              h.weaknesses = nil
+            } else {
+              h.weaknesses = hero.object(forKey: "weaknesses") as! NSArray
+            }
+            
+            /*if let heroStrengths = hero.object(forKey: "strengths") as? [String], let heroWeaknesses = hero.object(forKey: "weaknesses") as? [String] {
               h.strengths = heroStrengths as NSArray
               h.weaknesses = heroWeaknesses as NSArray
-            }
+            }*/
            
           }
           

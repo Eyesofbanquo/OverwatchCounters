@@ -39,13 +39,13 @@
                                         <rect key="frame" x="0.0" y="252" width="328" height="252"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1pH-ms-qFB">
-                                                <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
+                                                <rect key="frame" x="5" y="0.0" width="318" height="252"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-W0-s9Y" userLabel="Strengths">
-                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="126"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-W0-s9Y" userLabel="Strengths">
+                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="126"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69C-2Z-Zp2" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="126"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
@@ -60,7 +60,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gig-jb-Rlh" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="112.5" y="0.0" width="103" height="126"/>
+                                                                <rect key="frame" x="106" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
@@ -69,7 +69,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTh-K8-QfM" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="225.5" y="0.0" width="102.5" height="126"/>
+                                                                <rect key="frame" x="212" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
@@ -80,18 +80,18 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bms-4r-b3U" userLabel="Weaknesses">
-                                                        <rect key="frame" x="0.0" y="126" width="328" height="126"/>
+                                                        <rect key="frame" x="0.0" y="126" width="318" height="126"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Su-9dD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="126"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-Wo-agU">
-                                                                <rect key="frame" x="112.5" y="0.0" width="103" height="126"/>
+                                                                <rect key="frame" x="109.5" y="0.0" width="99" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Id-gpk">
-                                                                <rect key="frame" x="225.5" y="0.0" width="102.5" height="126"/>
+                                                                <rect key="frame" x="218.5" y="0.0" width="99.5" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                         </subviews>
@@ -101,10 +101,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="1pH-ms-qFB" secondAttribute="trailing" id="5zT-C9-10B"/>
+                                            <constraint firstAttribute="trailing" secondItem="1pH-ms-qFB" secondAttribute="trailing" constant="5" id="5zT-C9-10B"/>
                                             <constraint firstAttribute="bottom" secondItem="1pH-ms-qFB" secondAttribute="bottom" id="cUe-DR-9FI"/>
                                             <constraint firstItem="1pH-ms-qFB" firstAttribute="top" secondItem="BCv-4d-d22" secondAttribute="top" id="is6-gu-3pb"/>
-                                            <constraint firstItem="1pH-ms-qFB" firstAttribute="leading" secondItem="BCv-4d-d22" secondAttribute="leading" id="o9X-bf-NLt"/>
+                                            <constraint firstItem="1pH-ms-qFB" firstAttribute="leading" secondItem="BCv-4d-d22" secondAttribute="leading" constant="5" id="o9X-bf-NLt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTL-H6-cry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="125"/>
+            <point key="canvasLocation" x="180" y="124.64788732394366"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dfG-Xe-BgG">
