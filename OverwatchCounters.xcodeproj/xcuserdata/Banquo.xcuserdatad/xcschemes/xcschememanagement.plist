@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OverwatchCounters.xcscheme</key>
+		<key>OverwatchCounters.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +12,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>601B355B1F1C8BD800BAE388</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>60AA74811EFA6748003A04C3</key>
 		<dict>
 			<key>primary</key>

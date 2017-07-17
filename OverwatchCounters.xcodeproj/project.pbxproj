@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BFB230D75581BB97418DE5B /* Pods_OverwatchCounters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FE8FFA6D6EED19187E59CB /* Pods_OverwatchCounters.framework */; };
+		601B355F1F1C8BD800BAE388 /* OverwatchCountersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */; };
+		601B35661F1C8BEB00BAE388 /* SplashScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B35551F1C8B4D00BAE388 /* SplashScreenTest.swift */; };
 		6029B1CC1F0A0B42005FF826 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029B1CB1F0A0B42005FF826 /* MainScreenViewController.swift */; };
 		6029B1CE1F0A1826005FF826 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029B1CD1F0A1826005FF826 /* HeroTableViewCell.swift */; };
 		603102C61F08A2C400A77BD3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603102C51F08A2C400A77BD3 /* CloudKit.framework */; };
@@ -31,8 +33,22 @@
 		60E5D5071F146C590032F107 /* HeroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E5D5061F146C590032F107 /* HeroCircleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		601B35611F1C8BD800BAE388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AA747A1EFA6747003A04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60AA74811EFA6748003A04C3;
+			remoteInfo = OverwatchCounters;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		060D8128E9AA70CE791CDDBD /* Pods-OverwatchCounters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchCounters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverwatchCounters/Pods-OverwatchCounters.debug.xcconfig"; sourceTree = "<group>"; };
+		601B35551F1C8B4D00BAE388 /* SplashScreenTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenTest.swift; sourceTree = "<group>"; };
+		601B355C1F1C8BD800BAE388 /* OverwatchCountersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchCountersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchCountersTests.swift; sourceTree = "<group>"; };
+		601B35601F1C8BD800BAE388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6029B1CB1F0A0B42005FF826 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		6029B1CD1F0A1826005FF826 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		603102C41F08A2BF00A77BD3 /* OverwatchCounters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OverwatchCounters.entitlements; sourceTree = "<group>"; };
@@ -62,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		601B35591F1C8BD800BAE388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60AA747F1EFA6748003A04C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +104,23 @@
 				8706915B8F2B6FC5B880976C /* Pods-OverwatchCounters.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		601B35571F1C8B6000BAE388 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				601B35551F1C8B4D00BAE388 /* SplashScreenTest.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		601B355D1F1C8BD800BAE388 /* OverwatchCountersTests */ = {
+			isa = PBXGroup;
+			children = (
+				601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */,
+				601B35601F1C8BD800BAE388 /* Info.plist */,
+			);
+			path = OverwatchCountersTests;
 			sourceTree = "<group>";
 		};
 		6082097E1EFA693400FE51AC /* Fonts */ = {
@@ -104,7 +144,9 @@
 		60AA74791EFA6747003A04C3 = {
 			isa = PBXGroup;
 			children = (
+				601B35571F1C8B6000BAE388 /* Tests */,
 				60AA74841EFA6748003A04C3 /* OverwatchCounters */,
+				601B355D1F1C8BD800BAE388 /* OverwatchCountersTests */,
 				60AA74831EFA6748003A04C3 /* Products */,
 				471125000B130F3D81D08F8C /* Pods */,
 				61B6D44917445C8DA4BF6764 /* Frameworks */,
@@ -115,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				60AA74821EFA6748003A04C3 /* OverwatchCounters.app */,
+				601B355C1F1C8BD800BAE388 /* OverwatchCountersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +225,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		601B355B1F1C8BD800BAE388 /* OverwatchCountersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601B35631F1C8BD800BAE388 /* Build configuration list for PBXNativeTarget "OverwatchCountersTests" */;
+			buildPhases = (
+				601B35581F1C8BD800BAE388 /* Sources */,
+				601B35591F1C8BD800BAE388 /* Frameworks */,
+				601B355A1F1C8BD800BAE388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601B35621F1C8BD800BAE388 /* PBXTargetDependency */,
+			);
+			name = OverwatchCountersTests;
+			productName = OverwatchCountersTests;
+			productReference = 601B355C1F1C8BD800BAE388 /* OverwatchCountersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		60AA74811EFA6748003A04C3 /* OverwatchCounters */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AA74941EFA6748003A04C3 /* Build configuration list for PBXNativeTarget "OverwatchCounters" */;
@@ -212,6 +273,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Markim Shaw";
 				TargetAttributes = {
+					601B355B1F1C8BD800BAE388 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2W3P634BS8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60AA74811EFA6748003A04C3;
+					};
 					60AA74811EFA6748003A04C3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2W3P634BS8;
@@ -241,11 +308,19 @@
 			projectRoot = "";
 			targets = (
 				60AA74811EFA6748003A04C3 /* OverwatchCounters */,
+				601B355B1F1C8BD800BAE388 /* OverwatchCountersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		601B355A1F1C8BD800BAE388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60AA74801EFA6748003A04C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +387,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		601B35581F1C8BD800BAE388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B35661F1C8BEB00BAE388 /* SplashScreenTest.swift in Sources */,
+				601B355F1F1C8BD800BAE388 /* OverwatchCountersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60AA747E1EFA6748003A04C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +417,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		601B35621F1C8BD800BAE388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60AA74811EFA6748003A04C3 /* OverwatchCounters */;
+			targetProxy = 601B35611F1C8BD800BAE388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		60AA74891EFA6748003A04C3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -353,6 +445,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		601B35641F1C8BD800BAE388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2W3P634BS8;
+				INFOPLIST_FILE = OverwatchCountersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.80db.OverwatchCountersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverwatchCounters.app/OverwatchCounters";
+			};
+			name = Debug;
+		};
+		601B35651F1C8BD800BAE388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2W3P634BS8;
+				INFOPLIST_FILE = OverwatchCountersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.80db.OverwatchCountersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverwatchCounters.app/OverwatchCounters";
+			};
+			name = Release;
+		};
 		60AA74921EFA6748003A04C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +605,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		601B35631F1C8BD800BAE388 /* Build configuration list for PBXNativeTarget "OverwatchCountersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601B35641F1C8BD800BAE388 /* Debug */,
+				601B35651F1C8BD800BAE388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		60AA747D1EFA6747003A04C3 /* Build configuration list for PBXProject "OverwatchCounters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

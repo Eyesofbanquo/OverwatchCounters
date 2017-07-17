@@ -79,19 +79,19 @@
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bms-4r-b3U" userLabel="Weaknesses">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bms-4r-b3U" userLabel="Weaknesses">
                                                         <rect key="frame" x="0.0" y="126" width="318" height="126"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Su-9dD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="126"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Su-9dD" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-Wo-agU">
-                                                                <rect key="frame" x="109.5" y="0.0" width="99" height="126"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-Wo-agU" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                <rect key="frame" x="106" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Id-gpk">
-                                                                <rect key="frame" x="218.5" y="0.0" width="99.5" height="126"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Id-gpk" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                <rect key="frame" x="212" y="0.0" width="106" height="126"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                         </subviews>

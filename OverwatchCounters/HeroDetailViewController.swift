@@ -181,7 +181,7 @@ class HeroDetailViewController: UIViewController {
     
     
     loadCircleImages(from: strengthArray, for: strengthStackView)
-    //loadCircleImages(weaknessArray, weaknessStackView)
+    loadCircleImages(from: weaknessArray, for: weaknessStackView)
   }
   
   func loadCircleImages(from array: [HeroMO], for stackView: UIStackView) {
@@ -191,8 +191,9 @@ class HeroDetailViewController: UIViewController {
             let imageCache = self.sharedImageCache
       else { return }
       
-      let circle = stackView.arrangedSubviews[index] as! HeroCircleView
-      //circle.layoutIfNeeded()
+      guard let circle = stackView.arrangedSubviews[index] as? HeroCircleView
+      else { return }
+
       circle.heroLabel.text = name as String
       
       var image: UIImage?
