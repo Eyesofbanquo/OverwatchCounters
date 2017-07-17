@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0BFB230D75581BB97418DE5B /* Pods_OverwatchCounters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FE8FFA6D6EED19187E59CB /* Pods_OverwatchCounters.framework */; };
+		60009CC61F1CC7ED00CBD841 /* big_noodle_titling.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60009CC51F1CC7ED00CBD841 /* big_noodle_titling.ttf */; };
+		60009CC81F1CC80400CBD841 /* big_noodle_titling_oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60009CC71F1CC80400CBD841 /* big_noodle_titling_oblique.ttf */; };
 		601B355F1F1C8BD800BAE388 /* OverwatchCountersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */; };
 		6029B1CC1F0A0B42005FF826 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029B1CB1F0A0B42005FF826 /* MainScreenViewController.swift */; };
 		6029B1CE1F0A1826005FF826 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029B1CD1F0A1826005FF826 /* HeroTableViewCell.swift */; };
 		603102C61F08A2C400A77BD3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603102C51F08A2C400A77BD3 /* CloudKit.framework */; };
 		603102EA1F08F8C900A77BD3 /* OWCounters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 603102E81F08F8C900A77BD3 /* OWCounters.xcdatamodeld */; };
 		603102EC1F09CD4000A77BD3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603102EB1F09CD4000A77BD3 /* DataController.swift */; };
-		608209811EFA699200FE51AC /* big_noodle_titling.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 608209801EFA696600FE51AC /* big_noodle_titling.ttf */; };
-		608209821EFA699400FE51AC /* big_noodle_titling_oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6082097F1EFA695F00FE51AC /* big_noodle_titling_oblique.ttf */; };
 		608209851EFA6A9700FE51AC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608209841EFA6A9700FE51AC /* CircleView.swift */; };
 		60AA74861EFA6748003A04C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA74851EFA6748003A04C3 /* AppDelegate.swift */; };
 		60AA74881EFA6748003A04C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA74871EFA6748003A04C3 /* ViewController.swift */; };
@@ -44,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		060D8128E9AA70CE791CDDBD /* Pods-OverwatchCounters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchCounters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverwatchCounters/Pods-OverwatchCounters.debug.xcconfig"; sourceTree = "<group>"; };
+		60009CC51F1CC7ED00CBD841 /* big_noodle_titling.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling.ttf; sourceTree = "<group>"; };
+		60009CC71F1CC80400CBD841 /* big_noodle_titling_oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling_oblique.ttf; sourceTree = "<group>"; };
 		601B355C1F1C8BD800BAE388 /* OverwatchCountersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchCountersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchCountersTests.swift; sourceTree = "<group>"; };
 		601B35601F1C8BD800BAE388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		603102C51F08A2C400A77BD3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		603102E91F08F8C900A77BD3 /* OWCounters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OWCounters.xcdatamodel; sourceTree = "<group>"; };
 		603102EB1F09CD4000A77BD3 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		6082097F1EFA695F00FE51AC /* big_noodle_titling_oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = big_noodle_titling_oblique.ttf; path = ../../../../Downloads/bignoodletitling/big_noodle_titling_oblique.ttf; sourceTree = "<group>"; };
-		608209801EFA696600FE51AC /* big_noodle_titling.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = big_noodle_titling.ttf; path = ../../../../Downloads/bignoodletitling/big_noodle_titling.ttf; sourceTree = "<group>"; };
 		608209841EFA6A9700FE51AC /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		60AA74821EFA6748003A04C3 /* OverwatchCounters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverwatchCounters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA74851EFA6748003A04C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,13 +104,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		601B35571F1C8B6000BAE388 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
 		601B355D1F1C8BD800BAE388 /* OverwatchCountersTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +116,8 @@
 		6082097E1EFA693400FE51AC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				608209801EFA696600FE51AC /* big_noodle_titling.ttf */,
-				6082097F1EFA695F00FE51AC /* big_noodle_titling_oblique.ttf */,
+				60009CC71F1CC80400CBD841 /* big_noodle_titling_oblique.ttf */,
+				60009CC51F1CC7ED00CBD841 /* big_noodle_titling.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -141,7 +134,6 @@
 		60AA74791EFA6747003A04C3 = {
 			isa = PBXGroup;
 			children = (
-				601B35571F1C8B6000BAE388 /* Tests */,
 				60AA74841EFA6748003A04C3 /* OverwatchCounters */,
 				601B355D1F1C8BD800BAE388 /* OverwatchCountersTests */,
 				60AA74831EFA6748003A04C3 /* Products */,
@@ -324,11 +316,11 @@
 			files = (
 				60AA74901EFA6748003A04C3 /* LaunchScreen.storyboard in Resources */,
 				60AA748D1EFA6748003A04C3 /* Assets.xcassets in Resources */,
-				608209811EFA699200FE51AC /* big_noodle_titling.ttf in Resources */,
 				60E5D4FE1F0D93A30032F107 /* HeroDetail.storyboard in Resources */,
-				608209821EFA699400FE51AC /* big_noodle_titling_oblique.ttf in Resources */,
 				60AA748B1EFA6748003A04C3 /* Main.storyboard in Resources */,
 				60D7DBA41F061AD80019F0E3 /* MainScreen.storyboard in Resources */,
+				60009CC61F1CC7ED00CBD841 /* big_noodle_titling.ttf in Resources */,
+				60009CC81F1CC80400CBD841 /* big_noodle_titling_oblique.ttf in Resources */,
 				60E5D5051F0D96AD0032F107 /* HeroDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
