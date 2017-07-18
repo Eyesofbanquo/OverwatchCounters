@@ -20,8 +20,3 @@ target 'OverwatchCounters' do
 
 
 end
-
-target 'OverwatchCountersTests' do
-  #use_frameworks!
-  #testing_pods
-end

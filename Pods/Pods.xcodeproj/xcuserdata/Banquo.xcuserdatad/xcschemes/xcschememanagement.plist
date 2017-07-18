@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-OverwatchCountersTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,11 +27,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6777C20B118A767567857E2931849968</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
 		<dict>
 			<key>primary</key>
