@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87EA630B03B4FFC8DE27774970142603"
-               BuildableName = "Pods_OverwatchCounters_OverwatchCountersTests.framework"
-               BlueprintName = "Pods-OverwatchCounters-OverwatchCountersTests"
+               BlueprintIdentifier = "6777C20B118A767567857E2931849968"
+               BuildableName = "Pods_OverwatchCountersTests.framework"
+               BlueprintName = "Pods-OverwatchCountersTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "87EA630B03B4FFC8DE27774970142603"
-            BuildableName = "Pods_OverwatchCounters_OverwatchCountersTests.framework"
-            BlueprintName = "Pods-OverwatchCounters-OverwatchCountersTests"
+            BlueprintIdentifier = "6777C20B118A767567857E2931849968"
+            BuildableName = "Pods_OverwatchCountersTests.framework"
+            BlueprintName = "Pods-OverwatchCountersTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

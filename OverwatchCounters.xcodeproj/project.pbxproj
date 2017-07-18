@@ -388,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Pods-OverwatchCounters-OverwatchCountersTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverwatchCountersTests/Pods-OverwatchCountersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67A7E224BD9FBC2C014A8001 /* [CP] Embed Pods Frameworks */ = {
@@ -433,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Pods-OverwatchCounters-OverwatchCountersTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverwatchCountersTests/Pods-OverwatchCountersTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E251C4FA8B3B8654B0AFA0CA /* [CP] Check Pods Manifest.lock */ = {
@@ -515,7 +515,7 @@
 /* Begin XCBuildConfiguration section */
 		601B35641F1C8BD800BAE388 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8DF964C237B968DC2FDD37C /* Pods-OverwatchCounters-OverwatchCountersTests.debug.xcconfig */;
+			baseConfigurationReference = 8E2FDE355FB86490FDC20B4F /* Pods-OverwatchCountersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2W3P634BS8;
@@ -530,7 +530,7 @@
 		};
 		601B35651F1C8BD800BAE388 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA0BBB14D90DD67079A68ACC /* Pods-OverwatchCounters-OverwatchCountersTests.release.xcconfig */;
+			baseConfigurationReference = A72116CB28049831A48CF833 /* Pods-OverwatchCountersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2W3P634BS8;

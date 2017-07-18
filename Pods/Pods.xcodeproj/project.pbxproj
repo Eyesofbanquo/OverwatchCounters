@@ -21,7 +21,7 @@
 		22D4A1F4626C34CD8273AD30945565DD /* HeroModifier+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2C52AFF5782703EB681E94DE63080 /* HeroModifier+String.swift */; };
 		23F0915C9EE38E69945728CF062B136B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D54E439BF251185D8E1ACC05E0E00 /* ConstraintLayoutSupport.swift */; };
 		265C1318668C380625F5989E98D76BCD /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA00E3F80C89B17A9885A99FB9CB40FE /* ConstraintLayoutGuide.swift */; };
-		2689C9B622DC33125DD062F020979E94 /* Pods-OverwatchCounters-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4343707217D4E5AAEB58B354E1B60C /* Pods-OverwatchCounters-dummy.m */; };
+		2689C9B622DC33125DD062F020979E94 /* Pods-OverwatchCounters-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4633EF299CD7A0206AEC45266CE26F88 /* Pods-OverwatchCounters-dummy.m */; };
 		27D6B5F4A85F2AA99C4FA6CE85E606DD /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6AF9C83CCD00FA536D91B98674B52 /* MatchPreprocessor.swift */; };
 		29F74E8A334254C68C6720E3B247CE32 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 00930B615783BBF9EF9C104DC3BA5528 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DDDE2C06FB4DCC639CFD100F224D6FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B36F3336D4F20C3400AB6EAC6F631A33 /* UIColor+Chameleon.m */; };
@@ -29,14 +29,13 @@
 		2FD894D60728D6D0B077E7872BE6BF30 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3948F4D248787021A7854AB51A4AF /* ConstraintInsets.swift */; };
 		31506276057D13DC42B96E9177A84EAA /* HeroAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2FF73E926677780B385485C21510B /* HeroAnimatorViewContext.swift */; };
 		370398BA609BAD98087DB9FB5EEB5E83 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0489CC1C07DB422535C5344F266BE2 /* ConstraintMakerRelatable.swift */; };
-		38C5B75C93D3371644B09DB5C88F10AD /* Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F4B02AAF60F0096F47500973D91430B /* Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D08C4F4E2E65D192D317AED0A8237B3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CB753F976688E3284AC8D4051B001A /* UIColor+ChameleonPrivate.m */; };
-		3E70AABF896B9C743CEB1F9F53A9A188 /* Pods-OverwatchCounters-OverwatchCountersTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BC8547F1A2ADE13C4E034B61D4B977 /* Pods-OverwatchCounters-OverwatchCountersTests-dummy.m */; };
 		3FBB039F03A8FA3402A2E3213F2E55B0 /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A06B234EF25FF4A7187A613050682 /* BasePreprocessor.swift */; };
 		44117424757A5E62D87B8BF4B41A4207 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FA852F843B60A50013CAD66AD74979E0 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		459048ECD9FAA42B77566EC56ECAD793 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DE5BAD524CA4662F6540B96CA607D7 /* UINavigationController+Chameleon.m */; };
 		46B9447085D23FE5E4EC735CF7819AA1 /* UIView+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867FDB61079552616C8869E96DBE1E9 /* UIView+Hero.swift */; };
 		4A7F6945FC35DB43E7C78876DD95CB2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */; };
+		4E5315337201FAEAD28DED5C42C29A54 /* Pods-OverwatchCountersTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD454A0BC788DD1497AC46A601CB339 /* Pods-OverwatchCountersTests-dummy.m */; };
 		52F5EDCDCF22548BCAE397DF32D20AF1 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8047F485F9FD9329E37B0F8CBCC9AAC3 /* SnapKit-dummy.m */; };
 		56269601B77F1C8809C1E063E0E190A1 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A028403F5F958F9D2A215DEC3DA6E /* HeroDefaultAnimator.swift */; };
 		5E3F91A88D6E75F5491091E3C0FC1279 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDD877B5A1124FF00E752D7646B1A5 /* ConstraintRelation.swift */; };
@@ -57,12 +56,12 @@
 		853583CD64C0C4ECEFEB5F9F4058F158 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
 		8563553A110A126032B26EC80334D266 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F966A3ED0AF16C888023B908BC0415 /* ConstraintItem.swift */; };
 		86F7D970F220974A0E26C3B632C5C74F /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DA49E8D02B8E69A01F6B14CB29F979F0 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FDFB9864EBFE51EE5C64CD0C02D3F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
 		8CAD319B99E82AED3B43F778396FC903 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A4FBD89967DF2FF06A5FE0BCD39D5 /* ConstraintView.swift */; };
 		8D9870BF0E3F199BE7CBBF08AC030AE2 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B677F19E70EF5C368A9AE2B4C1450 /* ConstraintViewDSL.swift */; };
 		8DA0A66A9E4B43E7DFEB6A4425B72C64 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE046D4A75087E55D6A538C2675E30D /* ConstraintLayoutSupportDSL.swift */; };
 		8ECF929AC5E737EBEB542283886D5E07 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 005807424B7797D4E1DBD5AA5A7C0CC7 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EF17BA2E8848FC3003E70AE92F78E5C /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A81FC2580E7B152C5B78ED4C5C39CB /* ConstraintInsetTarget.swift */; };
+		90614801D800E9AC5F778C59605BF47A /* Pods-OverwatchCountersTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BF8C0CF4FA1271F5A989A23F972498 /* Pods-OverwatchCountersTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		923369708790774BB768672AA79DCAD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
 		95E542740750F827BE2EBE3DE6F62D0E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC90ADE0D00A202E96AB7BBF05FE66B /* ChameleonFramework-dummy.m */; };
 		96026C3DADA0F5276146CCDF9FB742FC /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5384A64FBF7D60013032F647437936E /* ConstraintConstantTarget.swift */; };
@@ -81,7 +80,7 @@
 		B3144F20CAA1DED1E329B792D8510681 /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007265012516D82713E5A8DB14D45DCA /* HeroModifier.swift */; };
 		B4EA53699AA19822E674188743266B2B /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DA97A3B74DD72FA8026836159A5EB204 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8B7EE8C80612C6FF517DEC663FB294E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CB23160966FBBB4B32A45477952D3 /* ConstraintConfig.swift */; };
-		BC480A4C99E37930769A1B89BBFD625C /* Pods-OverwatchCounters-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC710BE4338506FF3ECB73D4C2E98FF /* Pods-OverwatchCounters-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC480A4C99E37930769A1B89BBFD625C /* Pods-OverwatchCounters-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ECE1CFE193186C5D64EFF08C86CADE /* Pods-OverwatchCounters-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFA97401155C4E14893D9AA1E0D1EC80 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B210058790A09D44C57BD8A68D84AEC /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0F7B6B51DAEE038CAFBD40F1ABE196D /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B8E07D65AEA65E39C7C3EE97B0233 /* HeroDebugView.swift */; };
 		C3939BABBAFA5848B7F9655C6E913F04 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E943B8A3460E138756A22CFDC6BAB4 /* ConstraintMaker.swift */; };
@@ -89,6 +88,7 @@
 		C3C9ADF20D2DDB699009348A38E8A15A /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DECF96B9137AAC1D98472E1D0D3FA /* SourcePreprocessor.swift */; };
 		C7383A98A09B37C26F390748FCCEA7AC /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1CBF644C470528845A72BDDC413B65 /* LayoutConstraintItem.swift */; };
 		C78AC9DF55C43B62D6851B2F30ADFE0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */; };
+		CC7EB6B80115258C22F641538B758737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
 		CC8FF1B875E5F50C589FD33275B08B75 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5E09401F776655DA78C7BCAC13779 /* ConstraintPriority.swift */; };
 		CE1AF6B2B74A24988A9AA017274D1DB5 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11492639D60BE04D51F496F44B30839D /* ConstraintOffsetTarget.swift */; };
 		CEC0F93536B5972A7AE9D61B654EB419 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4B5B05710D497E705E40DC5BF1D6EE /* ConstraintRelatableTarget.swift */; };
@@ -126,13 +126,6 @@
 			remoteGlobalIDString = 91607EBC8B2B291721F61A5FEBA27C66;
 			remoteInfo = Hero;
 		};
-		917A578B6C3590A20039BDA582CFA793 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91607EBC8B2B291721F61A5FEBA27C66;
-			remoteInfo = Hero;
-		};
 		9A25A510317DCCA06AA219B89314B8F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -147,40 +140,26 @@
 			remoteGlobalIDString = 76BD4592010354D6C23D6ECCA20D83A8;
 			remoteInfo = ChameleonFramework;
 		};
-		DE4F300A7BBD87389238C6064952F9E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 76BD4592010354D6C23D6ECCA20D83A8;
-			remoteInfo = ChameleonFramework;
-		};
-		E7E01FF01C50A1A4CC762988A25AC7A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88621A1E72A3369271BF7887B2F37D68;
-			remoteInfo = SnapKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00499F7B5E6232AE28539EA77C75CE32 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005807424B7797D4E1DBD5AA5A7C0CC7 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		007265012516D82713E5A8DB14D45DCA /* HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroModifier.swift; path = Sources/HeroModifier.swift; sourceTree = "<group>"; };
 		00930B615783BBF9EF9C104DC3BA5528 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		039FDDC59F489328311FD948219B8620 /* Pods-OverwatchCounters-OverwatchCountersTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-OverwatchCountersTests-resources.sh"; sourceTree = "<group>"; };
-		082EC67555AC16E77F2F873859137F14 /* Pods-OverwatchCounters-OverwatchCountersTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OverwatchCounters-OverwatchCountersTests.modulemap"; sourceTree = "<group>"; };
+		00FB661800A95B9795F8BD296A976CBC /* Pods-OverwatchCountersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCountersTests.release.xcconfig"; sourceTree = "<group>"; };
 		08DE5BAD524CA4662F6540B96CA607D7 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		09404A49E549AAA6574B911548144770 /* Pods-OverwatchCounters-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverwatchCounters-acknowledgements.markdown"; sourceTree = "<group>"; };
 		094B0291EEA901340D8E0406A6987847 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		09ECE1CFE193186C5D64EFF08C86CADE /* Pods-OverwatchCounters-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverwatchCounters-umbrella.h"; sourceTree = "<group>"; };
 		0A4A4956A612888B2D9A90B261980331 /* Hero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-umbrella.h"; sourceTree = "<group>"; };
 		0C1663C8B92CF43774BB42A0D5947F9F /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 		0CD582A2BCE2F0E377D191005F03A8DB /* DispatchQueue+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Hero.swift"; path = "Sources/DispatchQueue+Hero.swift"; sourceTree = "<group>"; };
 		0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		10033DDC956D8A31D795B51BA82E7C42 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
 		11492639D60BE04D51F496F44B30839D /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		12617C45B3C96FB6CA0A000CBF680E7F /* Pods-OverwatchCounters-OverwatchCountersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters-OverwatchCountersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		15EAA53AD4924462F952E3091214C631 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		15F93284660229527FFCDDE8B4A76879 /* Pods-OverwatchCounters-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-resources.sh"; sourceTree = "<group>"; };
-		1B4343707217D4E5AAEB58B354E1B60C /* Pods-OverwatchCounters-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverwatchCounters-dummy.m"; sourceTree = "<group>"; };
+		160A6AA9B649FF00C4D486B5A74F1283 /* Pods-OverwatchCountersTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OverwatchCountersTests.modulemap"; sourceTree = "<group>"; };
 		1BE6AF9C83CCD00FA536D91B98674B52 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/MatchPreprocessor.swift; sourceTree = "<group>"; };
 		1D5993CCBD7AFA9F9B25E0EBD80A7A63 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
 		1FF6092A0426687A542A625D34E5958F /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
@@ -191,16 +170,17 @@
 		2AC90ADE0D00A202E96AB7BBF05FE66B /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		2B3DF9B9A554C41B385A159E93859A7C /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		2BE046D4A75087E55D6A538C2675E30D /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		2D9E1949223DA490B59CFDFBC78F100C /* Pods_OverwatchCounters_OverwatchCountersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverwatchCounters_OverwatchCountersTests.framework; path = "Pods-OverwatchCounters-OverwatchCountersTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2750188A18D53AD6B7E59217DC6A19 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAB5E06762607641D1DEAE7618446EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F1D54E439BF251185D8E1ACC05E0E00 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		32FDEDDB58E12122050CE35C493F79FE /* HeroDefaultAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDefaultAnimations.swift; path = Sources/HeroDefaultAnimations.swift; sourceTree = "<group>"; };
-		371160E434422064942E7944D13E16BF /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hero.framework; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A461AF975446F98C9BE41902CFE64B8 /* Pods-OverwatchCounters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters.release.xcconfig"; sourceTree = "<group>"; };
 		3A8291AB61DB38A372115C19915CA613 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		3A8A18177673D166BB961F5A91133DB8 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
 		3B1A70E7EB25B6AA92CD2AFDFDC15674 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
 		3D5861894F1DA57C0D7F86CD9DA1D7D3 /* Hero-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-prefix.pch"; sourceTree = "<group>"; };
 		3E4B5B05710D497E705E40DC5BF1D6EE /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		41D946DD3610991487DC02696164D181 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4633EF299CD7A0206AEC45266CE26F88 /* Pods-OverwatchCounters-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverwatchCounters-dummy.m"; sourceTree = "<group>"; };
 		49E943B8A3460E138756A22CFDC6BAB4 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		4AA0B158A37C25353A64891A6704E8FA /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		4B210058790A09D44C57BD8A68D84AEC /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
@@ -210,49 +190,45 @@
 		51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		5341BE2C09CCD39056B42CDD6A561165 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
 		54148F88B62783AA4740C6AA7B2D094D /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		5664B0AFB218B98EB5C3654889085220 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5763959F63ED1402E4313C375D4233C7 /* Pods-OverwatchCounters-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverwatchCounters-acknowledgements.plist"; sourceTree = "<group>"; };
 		57B17680C6C2A97A9A42B7F7F586DF66 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		5C1CBF644C470528845A72BDDC413B65 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		5E396BD1E7F0735118DB4B1CCE9B0652 /* HeroDebugPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugPlugin.swift; path = Sources/HeroDebugPlugin.swift; sourceTree = "<group>"; };
 		5EEF3F27E53638755F0D51A603524F54 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		5F0CB23160966FBBB4B32A45477952D3 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		6002A3811EF5726BA8AFC15D2A6557F9 /* Pods-OverwatchCountersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCountersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61A5E09401F776655DA78C7BCAC13779 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		62AB48E3B62A91E9C931DF45DA888839 /* CAMediaTimingFunction+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAMediaTimingFunction+Hero.swift"; path = "Sources/CAMediaTimingFunction+Hero.swift"; sourceTree = "<group>"; };
 		64A23D297729530CA9FA737EF39D0311 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		65587C618BD9443F46EA2269B956D387 /* Pods-OverwatchCountersTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCountersTests-frameworks.sh"; sourceTree = "<group>"; };
 		6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		693D99C71770B491B90AF0C81BDFB4B0 /* HeroIndependentController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroIndependentController.swift; path = Sources/HeroIndependentController.swift; sourceTree = "<group>"; };
 		69617BEB459976124017EE3ACEFF6E75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6E8FBC864D307EEEF32CE5E4967079 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F4B02AAF60F0096F47500973D91430B /* Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h"; sourceTree = "<group>"; };
+		6FD454A0BC788DD1497AC46A601CB339 /* Pods-OverwatchCountersTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverwatchCountersTests-dummy.m"; sourceTree = "<group>"; };
 		70FECC1AFD8A3D89653FE62776F5940F /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		7525AD642660DB2FA277F12BA99FEE58 /* Pods-OverwatchCounters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters.debug.xcconfig"; sourceTree = "<group>"; };
-		75405A2D8F727BD2D73693A3B44DE994 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C7A21F3952F16C90EA4712FC668155 /* Pods_OverwatchCounters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverwatchCounters.framework; path = "Pods-OverwatchCounters.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C60E0A707B2CAE0FFE2972BC004CD /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		7B7B54B46B8DC6CD62344778AFB043A4 /* Pods-OverwatchCounters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters.debug.xcconfig"; sourceTree = "<group>"; };
 		7BD95890BCF8C9EE8313F0949CF94E25 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		7F229CBCBB40DA8A22678F79D7C7A423 /* Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8047F485F9FD9329E37B0F8CBCC9AAC3 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		852DCC90DEE5307C12A9B6C5B54D54E1 /* CALayer+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Hero.swift"; path = "Sources/CALayer+Hero.swift"; sourceTree = "<group>"; };
+		85D56362CB592A4929D22BF7D4C5782E /* Pods-OverwatchCounters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters.release.xcconfig"; sourceTree = "<group>"; };
 		8719A3CB7CF3A1576658E16BBCE587BD /* HeroPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroPlugin.swift; path = Sources/HeroPlugin.swift; sourceTree = "<group>"; };
 		874A4FBD89967DF2FF06A5FE0BCD39D5 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		874AD74F1F1B1454F5D2E8AF366C36AA /* HeroViewPropertyViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroViewPropertyViewContext.swift; path = Sources/HeroViewPropertyViewContext.swift; sourceTree = "<group>"; };
 		87502A6BC1181B2CA1CFD403098CB0CA /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		87E36CF6A33C392C802B63344B8D1780 /* Pods_OverwatchCounters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverwatchCounters.framework; path = "Pods-OverwatchCounters.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8865DA083A67F7822A63A330C86F3ED7 /* UIKit+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Hero.swift"; path = "Sources/UIKit+Hero.swift"; sourceTree = "<group>"; };
 		895778E2AB49B6EFC77BB5B706E23A92 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		8988B6B37FE27F9940A45A0EEDBFC243 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		8BFE768750A6707CE052AE252504C97B /* Pods-OverwatchCounters-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-frameworks.sh"; sourceTree = "<group>"; };
 		8C538050DFD0CE2C1CAED620C441D351 /* Hero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hero-dummy.m"; sourceTree = "<group>"; };
-		8F3A8ED9050E6EAD807A39FCFD36DF23 /* Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		908E0FBA28EF2AFD19D3A9C3966692F1 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E380689375ED392982651647B7F74BC /* Pods-OverwatchCountersTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCountersTests-resources.sh"; sourceTree = "<group>"; };
 		92A81FC2580E7B152C5B78ED4C5C39CB /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94718044FB371D3912D31E4D7CCA9363 /* Pods-OverwatchCounters-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverwatchCounters-acknowledgements.plist"; sourceTree = "<group>"; };
 		94DFC145DC7FE3B399D81434C0D99BED /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		98BC8547F1A2ADE13C4E034B61D4B977 /* Pods-OverwatchCounters-OverwatchCountersTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverwatchCounters-OverwatchCountersTests-dummy.m"; sourceTree = "<group>"; };
-		9CC710BE4338506FF3ECB73D4C2E98FF /* Pods-OverwatchCounters-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverwatchCounters-umbrella.h"; sourceTree = "<group>"; };
 		A06A470E9D5ADFE1AAA7E2F8365D790E /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		A2709CEAD6DC82D0D27FEFC3E5391110 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		A2BEE637D3642368809A272F51013E84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B81E0589126ADD9AAF5CDC004A562E /* Pods-OverwatchCounters-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-resources.sh"; sourceTree = "<group>"; };
 		A59178100B511ED76665CD5EE2D52783 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		A884DBF52829043B1BBE2BF0D36A9623 /* Array+HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+HeroModifier.swift"; path = "Sources/Array+HeroModifier.swift"; sourceTree = "<group>"; };
 		AA11E2C0D382EE84FF903D68C70F0C21 /* HeroCoreAnimationViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroCoreAnimationViewContext.swift; path = Sources/HeroCoreAnimationViewContext.swift; sourceTree = "<group>"; };
@@ -262,29 +238,30 @@
 		B1F2C52AFF5782703EB681E94DE63080 /* HeroModifier+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroModifier+String.swift"; path = "Sources/HeroModifier+String.swift"; sourceTree = "<group>"; };
 		B36F3336D4F20C3400AB6EAC6F631A33 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
 		B3CE4AB151B60EC7CD75F3DDA30E6BCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B506545E5E77112FA81FF15214B3737F /* Pods-OverwatchCounters.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OverwatchCounters.modulemap"; sourceTree = "<group>"; };
 		B5C41AF1FB1DA4F82279CD944E62A750 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		B81CA51B0D6DB2813C8165CB82052517 /* Pods-OverwatchCountersTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverwatchCountersTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA00E3F80C89B17A9885A99FB9CB40FE /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		BA4A028403F5F958F9D2A215DEC3DA6E /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDefaultAnimator.swift; path = Sources/HeroDefaultAnimator.swift; sourceTree = "<group>"; };
 		BE9DECF96B9137AAC1D98472E1D0D3FA /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/SourcePreprocessor.swift; sourceTree = "<group>"; };
 		C234FBED76265B82687FC4FE7A462562 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		C288F6ABBF3EAD0ABD5727A894157F0A /* Hero.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hero.xcconfig; sourceTree = "<group>"; };
 		C324DBAB7898A0B6C6791FBF978A47BB /* HeroContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroContext.swift; path = Sources/HeroContext.swift; sourceTree = "<group>"; };
-		C53EBAFFCD0E359DB573B1221F55C6E4 /* Pods-OverwatchCounters-OverwatchCountersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverwatchCounters-OverwatchCountersTests.release.xcconfig"; sourceTree = "<group>"; };
+		C477BCF0D88FC6948C272082FD347A09 /* Pods_OverwatchCountersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OverwatchCountersTests.framework; path = "Pods-OverwatchCountersTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CB753F976688E3284AC8D4051B001A /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		C7C4C84B6517E6AD50951AA264CEC72B /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
 		CA50D80D99427A59734840C615027002 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
 		CCB2FF73E926677780B385485C21510B /* HeroAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroAnimatorViewContext.swift; path = Sources/HeroAnimatorViewContext.swift; sourceTree = "<group>"; };
-		CEB7F2AE58633D027A27CA87AD75BEC2 /* Pods-OverwatchCounters-OverwatchCountersTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-OverwatchCountersTests-frameworks.sh"; sourceTree = "<group>"; };
 		CF6A06B234EF25FF4A7187A613050682 /* BasePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePreprocessor.swift; path = Sources/BasePreprocessor.swift; sourceTree = "<group>"; };
 		CFE3948F4D248787021A7854AB51A4AF /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		D43473F65694627900C8A210BB7E7D20 /* Pods-OverwatchCounters.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OverwatchCounters.modulemap"; sourceTree = "<group>"; };
+		D365D4B2D0844F1269C9F623E4D5AA38 /* Pods-OverwatchCountersTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverwatchCountersTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D5BE4A451519B3E912BD19CE590942BF /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
 		D63F2C31230895D04F135C846BAE8258 /* HeroTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTargetState.swift; path = Sources/HeroTargetState.swift; sourceTree = "<group>"; };
 		D779E2344C19FAFB877D807DD654F526 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		DA49E8D02B8E69A01F6B14CB29F979F0 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		DA97A3B74DD72FA8026836159A5EB204 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		DBC0FFF5A2B1548712B106EDEAF84302 /* Pods-OverwatchCounters-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverwatchCounters-frameworks.sh"; sourceTree = "<group>"; };
 		DE698E7DB7CA407F19C5C236B8A5E923 /* UIViewController+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Hero.swift"; path = "Sources/UIViewController+Hero.swift"; sourceTree = "<group>"; };
-		E086FA06792F1AC2F9FF8E7DEAEC49F5 /* Pods-OverwatchCounters-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverwatchCounters-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E0F966A3ED0AF16C888023B908BC0415 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		E19EA5A5BCAC68F6910F4380F1380A2E /* HeroBaseController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroBaseController.swift; path = Sources/HeroBaseController.swift; sourceTree = "<group>"; };
 		E39E3A7634256D60A2688E08E95AA60E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
@@ -292,9 +269,11 @@
 		E5384A64FBF7D60013032F647437936E /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		E766898953682392833442CEB6F87F75 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		E8EB5E05224453F4DD5ADDC1E2BEEFA2 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		EB546DCD7DFF188D0097DA62B709722A /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hero.framework; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F0378F4D7193F4C47A9AAA2847BD68D1 /* Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hero.swift; path = Sources/Hero.swift; sourceTree = "<group>"; };
 		F163719BC5CD95F8B6BD4030F609D774 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/CascadePreprocessor.swift; sourceTree = "<group>"; };
+		F1BF8C0CF4FA1271F5A989A23F972498 /* Pods-OverwatchCountersTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverwatchCountersTests-umbrella.h"; sourceTree = "<group>"; };
 		F1CD7D71910DE7144C26D778E4BC5016 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		FA852F843B60A50013CAD66AD74979E0 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		FCCABAC62EA56949EE94EC5697F4A108 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
@@ -305,6 +284,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E398E4BF2278DD32BF60769E7E99CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB6B80115258C22F641538B758737 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F14309CB7E02AF08C75051481C26AD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,14 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				853583CD64C0C4ECEFEB5F9F4058F158 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D586C0AD2D7E89E6D60FE302F3465C76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88FDFB9864EBFE51EE5C64CD0C02D3F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,31 +394,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3308419219CE77C183B5C12E756803F7 /* Targets Support Files */ = {
+		3B5837849DEFCB8868615941439621E2 /* Pods-OverwatchCountersTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4E02348C86DBFD9906782C40941FB8E /* Pods-OverwatchCounters */,
-				34AFDD7B0E2E5CB4117784650E7DAC33 /* Pods-OverwatchCounters-OverwatchCountersTests */,
+				41D946DD3610991487DC02696164D181 /* Info.plist */,
+				160A6AA9B649FF00C4D486B5A74F1283 /* Pods-OverwatchCountersTests.modulemap */,
+				B81CA51B0D6DB2813C8165CB82052517 /* Pods-OverwatchCountersTests-acknowledgements.markdown */,
+				D365D4B2D0844F1269C9F623E4D5AA38 /* Pods-OverwatchCountersTests-acknowledgements.plist */,
+				6FD454A0BC788DD1497AC46A601CB339 /* Pods-OverwatchCountersTests-dummy.m */,
+				65587C618BD9443F46EA2269B956D387 /* Pods-OverwatchCountersTests-frameworks.sh */,
+				8E380689375ED392982651647B7F74BC /* Pods-OverwatchCountersTests-resources.sh */,
+				F1BF8C0CF4FA1271F5A989A23F972498 /* Pods-OverwatchCountersTests-umbrella.h */,
+				6002A3811EF5726BA8AFC15D2A6557F9 /* Pods-OverwatchCountersTests.debug.xcconfig */,
+				00FB661800A95B9795F8BD296A976CBC /* Pods-OverwatchCountersTests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		34AFDD7B0E2E5CB4117784650E7DAC33 /* Pods-OverwatchCounters-OverwatchCountersTests */ = {
-			isa = PBXGroup;
-			children = (
-				5664B0AFB218B98EB5C3654889085220 /* Info.plist */,
-				082EC67555AC16E77F2F873859137F14 /* Pods-OverwatchCounters-OverwatchCountersTests.modulemap */,
-				8F3A8ED9050E6EAD807A39FCFD36DF23 /* Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.markdown */,
-				7F229CBCBB40DA8A22678F79D7C7A423 /* Pods-OverwatchCounters-OverwatchCountersTests-acknowledgements.plist */,
-				98BC8547F1A2ADE13C4E034B61D4B977 /* Pods-OverwatchCounters-OverwatchCountersTests-dummy.m */,
-				CEB7F2AE58633D027A27CA87AD75BEC2 /* Pods-OverwatchCounters-OverwatchCountersTests-frameworks.sh */,
-				039FDDC59F489328311FD948219B8620 /* Pods-OverwatchCounters-OverwatchCountersTests-resources.sh */,
-				6F4B02AAF60F0096F47500973D91430B /* Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h */,
-				12617C45B3C96FB6CA0A000CBF680E7F /* Pods-OverwatchCounters-OverwatchCountersTests.debug.xcconfig */,
-				C53EBAFFCD0E359DB573B1221F55C6E4 /* Pods-OverwatchCounters-OverwatchCountersTests.release.xcconfig */,
-			);
-			name = "Pods-OverwatchCounters-OverwatchCountersTests";
-			path = "Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests";
+			name = "Pods-OverwatchCountersTests";
+			path = "Target Support Files/Pods-OverwatchCountersTests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -448,8 +418,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				1CB0E58191F417B4F9EDC07562A77791 /* Pods */,
-				9E0A68F711AB5052B1D83B5A6AB8F808 /* Products */,
-				3308419219CE77C183B5C12E756803F7 /* Targets Support Files */,
+				A199795E8FE9A1AD944961203482A4B8 /* Products */,
+				CE4247D1B8BB1AA08FDA086EE1F956D7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -467,34 +437,34 @@
 			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
-		9E0A68F711AB5052B1D83B5A6AB8F808 /* Products */ = {
+		9CE9BB29069EA8A232B12ECFCBC10971 /* Pods-OverwatchCounters */ = {
 			isa = PBXGroup;
 			children = (
-				75405A2D8F727BD2D73693A3B44DE994 /* ChameleonFramework.framework */,
-				371160E434422064942E7944D13E16BF /* Hero.framework */,
-				87E36CF6A33C392C802B63344B8D1780 /* Pods_OverwatchCounters.framework */,
-				2D9E1949223DA490B59CFDFBC78F100C /* Pods_OverwatchCounters_OverwatchCountersTests.framework */,
-				908E0FBA28EF2AFD19D3A9C3966692F1 /* SnapKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A4E02348C86DBFD9906782C40941FB8E /* Pods-OverwatchCounters */ = {
-			isa = PBXGroup;
-			children = (
-				A2BEE637D3642368809A272F51013E84 /* Info.plist */,
-				D43473F65694627900C8A210BB7E7D20 /* Pods-OverwatchCounters.modulemap */,
-				E086FA06792F1AC2F9FF8E7DEAEC49F5 /* Pods-OverwatchCounters-acknowledgements.markdown */,
-				94718044FB371D3912D31E4D7CCA9363 /* Pods-OverwatchCounters-acknowledgements.plist */,
-				1B4343707217D4E5AAEB58B354E1B60C /* Pods-OverwatchCounters-dummy.m */,
-				8BFE768750A6707CE052AE252504C97B /* Pods-OverwatchCounters-frameworks.sh */,
-				15F93284660229527FFCDDE8B4A76879 /* Pods-OverwatchCounters-resources.sh */,
-				9CC710BE4338506FF3ECB73D4C2E98FF /* Pods-OverwatchCounters-umbrella.h */,
-				7525AD642660DB2FA277F12BA99FEE58 /* Pods-OverwatchCounters.debug.xcconfig */,
-				3A461AF975446F98C9BE41902CFE64B8 /* Pods-OverwatchCounters.release.xcconfig */,
+				2EAB5E06762607641D1DEAE7618446EB /* Info.plist */,
+				B506545E5E77112FA81FF15214B3737F /* Pods-OverwatchCounters.modulemap */,
+				09404A49E549AAA6574B911548144770 /* Pods-OverwatchCounters-acknowledgements.markdown */,
+				5763959F63ED1402E4313C375D4233C7 /* Pods-OverwatchCounters-acknowledgements.plist */,
+				4633EF299CD7A0206AEC45266CE26F88 /* Pods-OverwatchCounters-dummy.m */,
+				DBC0FFF5A2B1548712B106EDEAF84302 /* Pods-OverwatchCounters-frameworks.sh */,
+				A3B81E0589126ADD9AAF5CDC004A562E /* Pods-OverwatchCounters-resources.sh */,
+				09ECE1CFE193186C5D64EFF08C86CADE /* Pods-OverwatchCounters-umbrella.h */,
+				7B7B54B46B8DC6CD62344778AFB043A4 /* Pods-OverwatchCounters.debug.xcconfig */,
+				85D56362CB592A4929D22BF7D4C5782E /* Pods-OverwatchCounters.release.xcconfig */,
 			);
 			name = "Pods-OverwatchCounters";
 			path = "Target Support Files/Pods-OverwatchCounters";
+			sourceTree = "<group>";
+		};
+		A199795E8FE9A1AD944961203482A4B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2750188A18D53AD6B7E59217DC6A19 /* ChameleonFramework.framework */,
+				EB546DCD7DFF188D0097DA62B709722A /* Hero.framework */,
+				74C7A21F3952F16C90EA4712FC668155 /* Pods_OverwatchCounters.framework */,
+				C477BCF0D88FC6948C272082FD347A09 /* Pods_OverwatchCountersTests.framework */,
+				00499F7B5E6232AE28539EA77C75CE32 /* SnapKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AE7511AE9F910BD5BB3C5256DF0A2955 /* Swift */ = {
@@ -555,6 +525,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Hero";
+			sourceTree = "<group>";
+		};
+		CE4247D1B8BB1AA08FDA086EE1F956D7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CE9BB29069EA8A232B12ECFCBC10971 /* Pods-OverwatchCounters */,
+				3B5837849DEFCB8868615941439621E2 /* Pods-OverwatchCountersTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		EC8B8D14AB1544BF88E9828EDA895023 /* SnapKit */ = {
@@ -635,6 +614,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34C30696D66B4C84C8F44AAD5F21D122 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90614801D800E9AC5F778C59605BF47A /* Pods-OverwatchCountersTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54C142BDBC3B9B4E9B9B0E9503FA87B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,17 +661,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A30F8131F04306C544685EC7C967677F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38C5B75C93D3371644B09DB5C88F10AD /* Pods-OverwatchCounters-OverwatchCountersTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6777C20B118A767567857E2931849968 /* Pods-OverwatchCountersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9088A36A5FAC549474C6291AA8B055 /* Build configuration list for PBXNativeTarget "Pods-OverwatchCountersTests" */;
+			buildPhases = (
+				45D6CCA4536306709333CB42998FF29C /* Sources */,
+				4E398E4BF2278DD32BF60769E7E99CD3 /* Frameworks */,
+				34C30696D66B4C84C8F44AAD5F21D122 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OverwatchCountersTests";
+			productName = "Pods-OverwatchCountersTests";
+			productReference = C477BCF0D88FC6948C272082FD347A09 /* Pods_OverwatchCountersTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07398A672F3D6D682C4B2E94C83E2A0D /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
@@ -699,27 +695,7 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = 75405A2D8F727BD2D73693A3B44DE994 /* ChameleonFramework.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		87EA630B03B4FFC8DE27774970142603 /* Pods-OverwatchCounters-OverwatchCountersTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 70835E59F19180F895EA8AE1F08F7548 /* Build configuration list for PBXNativeTarget "Pods-OverwatchCounters-OverwatchCountersTests" */;
-			buildPhases = (
-				83EF6667EF854F63F399C5718D42EBC7 /* Sources */,
-				D586C0AD2D7E89E6D60FE302F3465C76 /* Frameworks */,
-				A30F8131F04306C544685EC7C967677F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F3E7A374FB8B3FAE2F1D229374DFD20 /* PBXTargetDependency */,
-				C03A6CF6F34B1D55382080327E83248B /* PBXTargetDependency */,
-				DE583AB8B4E070757E8CCFA842476484 /* PBXTargetDependency */,
-			);
-			name = "Pods-OverwatchCounters-OverwatchCountersTests";
-			productName = "Pods-OverwatchCounters-OverwatchCountersTests";
-			productReference = 2D9E1949223DA490B59CFDFBC78F100C /* Pods_OverwatchCounters_OverwatchCountersTests.framework */;
+			productReference = 2C2750188A18D53AD6B7E59217DC6A19 /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88621A1E72A3369271BF7887B2F37D68 /* SnapKit */ = {
@@ -736,7 +712,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 908E0FBA28EF2AFD19D3A9C3966692F1 /* SnapKit.framework */;
+			productReference = 00499F7B5E6232AE28539EA77C75CE32 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		91607EBC8B2B291721F61A5FEBA27C66 /* Hero */ = {
@@ -753,7 +729,7 @@
 			);
 			name = Hero;
 			productName = Hero;
-			productReference = 371160E434422064942E7944D13E16BF /* Hero.framework */;
+			productReference = EB546DCD7DFF188D0097DA62B709722A /* Hero.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D2D1E0494C33D676622533664768CA3A /* Pods-OverwatchCounters */ = {
@@ -773,7 +749,7 @@
 			);
 			name = "Pods-OverwatchCounters";
 			productName = "Pods-OverwatchCounters";
-			productReference = 87E36CF6A33C392C802B63344B8D1780 /* Pods_OverwatchCounters.framework */;
+			productReference = 74C7A21F3952F16C90EA4712FC668155 /* Pods_OverwatchCounters.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -793,14 +769,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9E0A68F711AB5052B1D83B5A6AB8F808 /* Products */;
+			productRefGroup = A199795E8FE9A1AD944961203482A4B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */,
 				91607EBC8B2B291721F61A5FEBA27C66 /* Hero */,
 				D2D1E0494C33D676622533664768CA3A /* Pods-OverwatchCounters */,
-				87EA630B03B4FFC8DE27774970142603 /* Pods-OverwatchCounters-OverwatchCountersTests */,
+				6777C20B118A767567857E2931849968 /* Pods-OverwatchCountersTests */,
 				88621A1E72A3369271BF7887B2F37D68 /* SnapKit */,
 			);
 		};
@@ -812,6 +788,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2689C9B622DC33125DD062F020979E94 /* Pods-OverwatchCounters-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D6CCA4536306709333CB42998FF29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5315337201FAEAD28DED5C42C29A54 /* Pods-OverwatchCountersTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,14 +837,6 @@
 				C7383A98A09B37C26F390748FCCEA7AC /* LayoutConstraintItem.swift in Sources */,
 				52F5EDCDCF22548BCAE397DF32D20AF1 /* SnapKit-dummy.m in Sources */,
 				6C2CDA9A008B49765E85756C7E3E4001 /* UILayoutSupport+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83EF6667EF854F63F399C5718D42EBC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E70AABF896B9C743CEB1F9F53A9A188 /* Pods-OverwatchCounters-OverwatchCountersTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,12 +901,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F3E7A374FB8B3FAE2F1D229374DFD20 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ChameleonFramework;
-			target = 76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */;
-			targetProxy = DE4F300A7BBD87389238C6064952F9E8 /* PBXContainerItemProxy */;
-		};
 		23150D6FBC40748A3D2F1B3934A34620 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
@@ -949,57 +919,9 @@
 			target = 91607EBC8B2B291721F61A5FEBA27C66 /* Hero */;
 			targetProxy = 2B47117D713C476B430F19C209A4C098 /* PBXContainerItemProxy */;
 		};
-		C03A6CF6F34B1D55382080327E83248B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Hero;
-			target = 91607EBC8B2B291721F61A5FEBA27C66 /* Hero */;
-			targetProxy = 917A578B6C3590A20039BDA582CFA793 /* PBXContainerItemProxy */;
-		};
-		DE583AB8B4E070757E8CCFA842476484 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 88621A1E72A3369271BF7887B2F37D68 /* SnapKit */;
-			targetProxy = E7E01FF01C50A1A4CC762988A25AC7A5 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3792057421D2DA1290ACC7FBACEBCD15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12617C45B3C96FB6CA0A000CBF680E7F /* Pods-OverwatchCounters-OverwatchCountersTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Pods-OverwatchCounters-OverwatchCountersTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OverwatchCounters_OverwatchCountersTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3E09A745CF2882E71BFC1132C8D8AE7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57B17680C6C2A97A9A42B7F7F586DF66 /* ChameleonFramework.xcconfig */;
@@ -1034,7 +956,7 @@
 		};
 		40872BA4350A6C7F3DFE474BACE486BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A461AF975446F98C9BE41902CFE64B8 /* Pods-OverwatchCounters.release.xcconfig */;
+			baseConfigurationReference = 85D56362CB592A4929D22BF7D4C5782E /* Pods-OverwatchCounters.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1208,6 +1130,41 @@
 			};
 			name = Release;
 		};
+		7E6190840B5B4C05F404FF3B553C4AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FB661800A95B9795F8BD296A976CBC /* Pods-OverwatchCountersTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverwatchCountersTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverwatchCountersTests/Pods-OverwatchCountersTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OverwatchCountersTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1248,6 +1205,41 @@
 			};
 			name = Release;
 		};
+		DA5C6BCF41ED0DE8A5922B4EF9151614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6002A3811EF5726BA8AFC15D2A6557F9 /* Pods-OverwatchCountersTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverwatchCountersTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverwatchCountersTests/Pods-OverwatchCountersTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OverwatchCountersTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DC63999776F200122F5779BBE1E785B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FF6092A0426687A542A625D34E5958F /* SnapKit.xcconfig */;
@@ -1280,41 +1272,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		DEC9D52E7D2F5A4E9B56776E79B55244 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53EBAFFCD0E359DB573B1221F55C6E4 /* Pods-OverwatchCounters-OverwatchCountersTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OverwatchCounters-OverwatchCountersTests/Pods-OverwatchCounters-OverwatchCountersTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OverwatchCounters_OverwatchCountersTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E3923CE70A641398913B8A3AA0FDBB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1351,7 +1308,7 @@
 		};
 		F75A6D7069AFAF50E9D9A8FCB0214E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7525AD642660DB2FA277F12BA99FEE58 /* Pods-OverwatchCounters.debug.xcconfig */;
+			baseConfigurationReference = 7B7B54B46B8DC6CD62344778AFB043A4 /* Pods-OverwatchCounters.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1406,20 +1363,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0C9088A36A5FAC549474C6291AA8B055 /* Build configuration list for PBXNativeTarget "Pods-OverwatchCountersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5C6BCF41ED0DE8A5922B4EF9151614 /* Debug */,
+				7E6190840B5B4C05F404FF3B553C4AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
 				B7324857C38B065FEB1EEE3105C2367A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		70835E59F19180F895EA8AE1F08F7548 /* Build configuration list for PBXNativeTarget "Pods-OverwatchCounters-OverwatchCountersTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3792057421D2DA1290ACC7FBACEBCD15 /* Debug */,
-				DEC9D52E7D2F5A4E9B56776E79B55244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

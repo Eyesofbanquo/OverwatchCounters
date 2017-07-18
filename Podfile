@@ -17,9 +17,11 @@ target 'OverwatchCounters' do
   pod "ChameleonFramework/Swift", :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
   # Pods for OverwatchCounters
-  target 'OverwatchCountersTests' do
-    #use_frameworks!
-    #testing_pods
-  end
 
+
+end
+
+target 'OverwatchCountersTests' do
+  #use_frameworks!
+  #testing_pods
 end

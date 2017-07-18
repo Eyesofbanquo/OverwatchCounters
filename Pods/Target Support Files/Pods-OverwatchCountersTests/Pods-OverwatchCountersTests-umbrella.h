@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_OverwatchCounters_OverwatchCountersTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_OverwatchCounters_OverwatchCountersTestsVersionString[];
+FOUNDATION_EXPORT double Pods_OverwatchCountersTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_OverwatchCountersTestsVersionString[];
 
