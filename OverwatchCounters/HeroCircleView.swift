@@ -38,6 +38,7 @@ class HeroCircleView: UIView {
   var viewForImageView: UIView!
   var imageView: UIImageView!
   var heroLabel: UILabel!
+  var heroLabelBackgroundView: UIView!
   
   
   
@@ -65,16 +66,31 @@ class HeroCircleView: UIView {
   func createHeroLabel() {
     self.heroLabel = UILabel()
     self.heroLabel.translatesAutoresizingMaskIntoConstraints = false
-    self.addSubview(heroLabel)
+    
+    //black transparent view
+    self.heroLabelBackgroundView = UIView()
+    self.heroLabelBackgroundView.translatesAutoresizingMaskIntoConstraints = false
+    self.addSubview(self.heroLabelBackgroundView)
+
+    self.heroLabelBackgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+    self.heroLabelBackgroundView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+    self.heroLabelBackgroundView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    self.heroLabelBackgroundView.heightAnchor.constraint(equalToConstant: self.bounds.height * 0.30).isActive = true
+    self.heroLabelBackgroundView.backgroundColor = .black
+    self.heroLabelBackgroundView.alpha = 0.3
+    //view.
+    
+    //view.addSubview(heroLabel)
+    self.insertSubview(heroLabel, aboveSubview: self.heroLabelBackgroundView)
     self.heroLabel.textAlignment = .center
     self.heroLabel.adjustsFontSizeToFitWidth = true
     
-    heroLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+    heroLabel.bottomAnchor.constraint(equalTo:  self.bottomAnchor).isActive = true
     heroLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-    heroLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-    heroLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    //heroLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+    //heroLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
-    heroLabel.font = UIFont(name: "BigNoodleTitling", size: 12.0)
+    heroLabel.font = UIFont(name: "BigNoodleTitling", size: 24.0)
   }
   
   func createImageView() {
@@ -85,7 +101,6 @@ class HeroCircleView: UIView {
     self.viewForImageView.clipsToBounds = true
     self.imageView.clipsToBounds = true
     self.addSubview(self.viewForImageView)
-    //self.addSubview(imageView)
   }
   
   /// Create a square frame from any rectangular bound
@@ -112,12 +127,7 @@ class HeroCircleView: UIView {
   }
   
   override func awakeFromNib() {
-//    self.viewForImageView = UIView()
-//    self.imageView = UIImageView()
     super.awakeFromNib()
-//    createImageView()
-//    createCircleMask()
-//    createHeroLabel()
   }
 
 }

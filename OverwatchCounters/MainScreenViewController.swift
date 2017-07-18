@@ -19,15 +19,11 @@ class MainScreenViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    //self.navigationController?.navigationBar.
     self.setStatusBarStyle(UIStatusBarStyleContrast)
     
     self.tableView.delegate = self
     self.tableView.dataSource = self
-    //self.tableView.
     self.tableView.separatorStyle = .none
-    //self.tableView.se
     
     self.imageCache = NSCache()
 
@@ -134,8 +130,7 @@ extension MainScreenViewController: UITableViewDataSource {
     let sectionInfo = sections[section]
     return sectionInfo.numberOfObjects
   }
-  
-  //func tableViewscr
+
 }
 
 extension MainScreenViewController: UIScrollViewDelegate {
@@ -159,12 +154,5 @@ extension MainScreenViewController: UIScrollViewDelegate {
       self.navigationController?.navigationBar.barTintColor = colors[2]
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
     }
-    
-    
-   // print(scrollView.contentOffset)
   }
-  //func scrolliew
-  /*func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-    print(scrollView.frame.origin)
-  }*/
 }

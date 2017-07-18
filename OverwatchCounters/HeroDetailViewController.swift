@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 import CoreData
 
 
@@ -33,7 +34,7 @@ class HeroDetailViewController: UIViewController {
     super.viewDidLoad()
     
     self.strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
-    self.weaknessStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
+    self.weaknessStackView = bottomContainerView.subviews[0].subviews[1] as! UIStackView
     
     Measure.run {
       initialization()
@@ -64,8 +65,12 @@ class HeroDetailViewController: UIViewController {
   }
   
   fileprivate func initialization() {
-    guard let heroName = self.hero?.name else { return }
+    guard let heroName = self.hero?.name,
+          let heroColors = self.hero?.colors as? [UIColor]
+    else { return }
+    
     self.title = heroName
+    self.topContainerView.backgroundColor = heroColors[0]
     
     detailInformation["strengths"] = []
     detailInformation["weaknesses"] = []
@@ -83,20 +88,56 @@ class HeroDetailViewController: UIViewController {
     let predicate = NSPredicate(format: "name == %@", heroName)
     fetchRequest.predicate = predicate
     
-    if let heroObject = try? self.managedObjectContext.fetch(fetchRequest), let hero = heroObject.first, let heroName = hero.name as NSString?, let imageCache = self.sharedImageCache, let imageData = imageCache.object(forKey: heroName) as Data?, let image = UIImage(data: imageData) {
+    if let heroObject = try? self.managedObjectContext.fetch(fetchRequest), let hero = heroObject.first, let heroName = hero.name as NSString?, let imageCache = self.sharedImageCache, let imageData = imageCache.object(forKey: heroName) as Data?, let image = UIImage(data: imageData){
       
       self.heroImageView.image = image
       
       self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
       
       self.heroImageView.center = topContainerView.center
+      
     }
   }
   
   /// Load the weaknesses and strengths HeroMO objects from core data using the [String] in the HeroMO object
   func loadStrengthsWeaknesses() {
 
-    if let h = self.hero, let strengths = h.strengths as? [String] {
+    let h = self.hero!
+    
+    if h.strengths == nil {
+      self.detailInformation["strengths"] = []
+    } else {
+      let strengths = h.strengths as! [String]
+      
+      for s in strengths {
+        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
+        let predicate = NSPredicate(format: "name == %@", s)
+        fetch.predicate = predicate
+        
+        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
+          detailInformation["strengths"]?.append(hero)
+        }
+      }
+    }
+    
+    if h.weaknesses == nil {
+      self.detailInformation["weaknesses"] = []
+
+    } else {
+      let weaknesses = h.weaknesses as! [String]
+      
+      for w in weaknesses {
+        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
+        let predicate = NSPredicate(format: "name == %@", w)
+        fetch.predicate = predicate
+        
+        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
+          detailInformation["weaknesses"]?.append(hero)
+        }
+      }
+    }
+    
+    /*if let h = self.hero, let strengths = h.strengths as? [String] {
       for s in strengths {
         let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
         let predicate = NSPredicate(format: "name == %@", s)
@@ -118,7 +159,7 @@ class HeroDetailViewController: UIViewController {
           detailInformation["weaknesses"]?.append(hero)
         }
       }
-    }
+    }*/
   }
   
   /// Overlay over the stackview that only displays if the strengths/weaknesses array is nil
@@ -142,6 +183,8 @@ class HeroDetailViewController: UIViewController {
     label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     
+    
+    
     view.layoutIfNeeded()
   }
   
@@ -155,6 +198,7 @@ class HeroDetailViewController: UIViewController {
     if hero.strengths == nil {
       
       strArray = []
+      
       let frameWithinStackView = self.strengthStackView.frame
       let convertedFrame = self.view.convert(frameWithinStackView, from: self.strengthStackView.superview!)
       let view = UIView(frame: convertedFrame)
@@ -162,7 +206,6 @@ class HeroDetailViewController: UIViewController {
       view.backgroundColor = .red
       
       noItemsOverlay(with: "There are no strengths", over: view)
-      
       self.view.addSubview(view)
     } else {
       strArray = hero.strengths as! [String]
@@ -182,6 +225,9 @@ class HeroDetailViewController: UIViewController {
       weakArray = hero.weaknesses as! [String]
     }
     
+    //self.detailInformation["strengths"] = strArray
+    //self.detailInformation["weaknesses"] = weakArray
+    
     if strArray.count < 3 {
       let endIndex = strArray.count
       _ = self.strengthStackView.arrangedSubviews[endIndex...2].map {
@@ -191,7 +237,7 @@ class HeroDetailViewController: UIViewController {
     
     if weakArray.count < 3 {
       let endIndex = weakArray.count
-      _ = self.strengthStackView.arrangedSubviews[endIndex...2].map {
+      _ = self.weaknessStackView.arrangedSubviews[endIndex...2].map {
         $0.alpha = 0.0
       }
     }
@@ -199,27 +245,30 @@ class HeroDetailViewController: UIViewController {
   
   fileprivate func setCircleImages() {
     
-    guard let strengthArray = self.detailInformation["strengths"], let weaknessArray = self.detailInformation["weaknesses"] else { return }
+    guard let strengthArray = self.detailInformation["strengths"], let weaknessArray = self.detailInformation["weaknesses"] else { return } 
     
-    guard let strengthStackView = self.bottomContainerView.subviews[0].subviews[0] as? UIStackView,
-          let weaknessStackView = self.bottomContainerView.subviews[0].subviews[1] as? UIStackView
-      else { return }   
-    
-    loadCircleImages(from: strengthArray, for: strengthStackView)
-    loadCircleImages(from: weaknessArray, for: weaknessStackView)
+    if strengthArray.count > 0 {
+      loadCircleImages(from: strengthArray, for: self.strengthStackView)
+    }
+    if weaknessArray.count > 0 {
+      loadCircleImages(from: weaknessArray, for: self.weaknessStackView)
+    }
   }
   
   func loadCircleImages(from array: [HeroMO], for stackView: UIStackView) {
     for (index, hero) in array.enumerated() {
       guard let name = hero.name as NSString?,
             let position = hero.circlePosition,
-            let imageCache = self.sharedImageCache
+            let imageCache = self.sharedImageCache,
+            let colors = hero.colors as? [UIColor]
       else { return }
       
       guard let circle = stackView.arrangedSubviews[index] as? HeroCircleView
       else { return }
 
       circle.heroLabel.text = name as String
+      circle.heroLabel.textColor = colors[2]
+      circle.backgroundColor = colors[0]
       
       var image: UIImage?
       //If the image data exists them load it from the cache. If not then download the image with URLSession.shared
@@ -243,6 +292,8 @@ class HeroDetailViewController: UIViewController {
             circle.imageView.frame.size = image.size
             circle.imageView.image = image
             circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
+            //let averageColor = UIColor(averageColorFrom: image)
+            //circle.heroLabel.textColor = ContrastColorOf(averageColor, returnFlat: true)
           }
         })
         task.resume()
