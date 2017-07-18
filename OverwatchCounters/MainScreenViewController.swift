@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 import CoreData
 
 class MainScreenViewController: UIViewController {
@@ -14,12 +15,19 @@ class MainScreenViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   var fetchController: NSFetchedResultsController<HeroMO>!
   var imageCache: NSCache<NSString, NSData>!
+  var previousIndexPath: IndexPath!
     
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //self.navigationController?.navigationBar.
+    self.setStatusBarStyle(UIStatusBarStyleContrast)
+    
     self.tableView.delegate = self
     self.tableView.dataSource = self
+    //self.tableView.
+    self.tableView.separatorStyle = .none
+    //self.tableView.se
     
     self.imageCache = NSCache()
 
@@ -43,9 +51,9 @@ class MainScreenViewController: UIViewController {
     
   }
   
-  override var preferredStatusBarStyle: UIStatusBarStyle {
+  /*override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
-  }
+  }*/
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let heroCell = sender as? HeroTableViewCell, let indexPath = self.tableView.indexPath(for: heroCell) {
@@ -68,8 +76,7 @@ extension MainScreenViewController: UITableViewDelegate {
     let hero = self.fetchController.object(at: indexPath)
     let heroStrengths = hero.strengths as? [String]
     let heroWeaknesses = hero.weaknesses as? [String]
-    
-    //print("Hi, I'm \(hero.name!)!\n These are my strengths: \(heroStrengths)\nThese are my weaknesses: \(heroWeaknesses)")
+    tableView.deselectRow(at: indexPath, animated: false)
     
   }
 }
@@ -83,12 +90,10 @@ extension MainScreenViewController: UITableViewDataSource {
     let heroCell = tableView.dequeueReusableCell(withIdentifier: "hero_cell", for: indexPath) as! HeroTableViewCell
     let hero = self.fetchController.object(at: indexPath)
     let colors = hero.colors as! [UIColor]
-    //print(colors)
     
+    heroCell.prepareForReuse()
     heroCell.name.text = hero.name ?? "no name"
     heroCell.backgroundColor = colors[0]
-
-    heroCell.prepareForReuse()
     
     guard let imageString = hero.image,
           let url = URL(string: imageString),
@@ -129,4 +134,37 @@ extension MainScreenViewController: UITableViewDataSource {
     let sectionInfo = sections[section]
     return sectionInfo.numberOfObjects
   }
+  
+  //func tableViewscr
+}
+
+extension MainScreenViewController: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    guard let indexPath = self.tableView.indexPathForRow(at: scrollView.contentOffset)
+      else { return }
+    if self.previousIndexPath == nil {
+      self.previousIndexPath = indexPath
+      let cell = self.fetchController.object(at: indexPath)
+      let colors = cell.colors as! [UIColor]
+      self.navigationController?.navigationBar.barTintColor = colors[2]
+      self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
+    }
+    
+    if self.previousIndexPath.item == indexPath.item {
+      return
+    } else {
+      self.previousIndexPath = indexPath
+      let cell = self.fetchController.object(at: indexPath)
+      let colors = cell.colors as! [UIColor]
+      self.navigationController?.navigationBar.barTintColor = colors[2]
+      self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
+    }
+    
+    
+   // print(scrollView.contentOffset)
+  }
+  //func scrolliew
+  /*func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    print(scrollView.frame.origin)
+  }*/
 }
