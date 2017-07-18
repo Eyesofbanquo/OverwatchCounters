@@ -2,7 +2,7 @@
 //  OverwatchCountersTests.swift
 //  OverwatchCountersTests
 //
-//  Created by Markim Shaw on 7/17/17.
+//  Created by Markim Shaw on 7/18/17.
 //  Copyright © 2017 Markim Shaw. All rights reserved.
 //
 
@@ -13,7 +13,6 @@ class OverwatchCountersTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-      
     }
     
     override func tearDown() {
