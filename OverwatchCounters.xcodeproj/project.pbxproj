@@ -11,7 +11,6 @@
 		0BFB230D75581BB97418DE5B /* Pods_OverwatchCounters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FE8FFA6D6EED19187E59CB /* Pods_OverwatchCounters.framework */; };
 		60009CC61F1CC7ED00CBD841 /* big_noodle_titling.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60009CC51F1CC7ED00CBD841 /* big_noodle_titling.ttf */; };
 		60009CC81F1CC80400CBD841 /* big_noodle_titling_oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60009CC71F1CC80400CBD841 /* big_noodle_titling_oblique.ttf */; };
-		60009CCA1F1CD13700CBD841 /* SplashScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60009CC91F1CD13700CBD841 /* SplashScreenTest.swift */; };
 		600B586C1F1D96A00036AD76 /* CircleViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600B586B1F1D96A00036AD76 /* CircleViewHelper.swift */; };
 		600B586E1F1D9F2A0036AD76 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600B586D1F1D9F2A0036AD76 /* UIColorExtension.swift */; };
 		601B355F1F1C8BD800BAE388 /* OverwatchCountersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */; };
@@ -51,7 +50,6 @@
 		060D8128E9AA70CE791CDDBD /* Pods-OverwatchCounters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchCounters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverwatchCounters/Pods-OverwatchCounters.debug.xcconfig"; sourceTree = "<group>"; };
 		60009CC51F1CC7ED00CBD841 /* big_noodle_titling.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling.ttf; sourceTree = "<group>"; };
 		60009CC71F1CC80400CBD841 /* big_noodle_titling_oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling_oblique.ttf; sourceTree = "<group>"; };
-		60009CC91F1CD13700CBD841 /* SplashScreenTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenTest.swift; sourceTree = "<group>"; };
 		600B586B1F1D96A00036AD76 /* CircleViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewHelper.swift; sourceTree = "<group>"; };
 		600B586D1F1D9F2A0036AD76 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		601B355C1F1C8BD800BAE388 /* OverwatchCountersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchCountersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +136,6 @@
 			children = (
 				601B355E1F1C8BD800BAE388 /* OverwatchCountersTests.swift */,
 				601B35601F1C8BD800BAE388 /* Info.plist */,
-				60009CC91F1CD13700CBD841 /* SplashScreenTest.swift */,
 			);
 			path = OverwatchCountersTests;
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60009CCA1F1CD13700CBD841 /* SplashScreenTest.swift in Sources */,
 				601B355F1F1C8BD800BAE388 /* OverwatchCountersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
