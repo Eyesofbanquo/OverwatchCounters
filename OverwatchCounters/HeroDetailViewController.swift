@@ -121,25 +121,49 @@ class HeroDetailViewController: UIViewController {
     }
   }
   
+  /// Overlay over the stackview that only displays if the strengths/weaknesses array is nil
+  ///
+  /// - Parameters:
+  ///   - text: the text to display
+  ///   - view: the stackview
+  fileprivate func noItemsOverlay(with text: String, over view: UIView){
+    /// Text label that will display 'there are no strengths/weaknesses'
+    let label = UILabel()
+    label.text = text
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.textAlignment = .center
+    label.adjustsFontSizeToFitWidth = true
+    label.font = UIFont(name: "BigNoodleTitling", size: 12.0)
+    label.textColor = .white
+    
+    //add label to subview and use autolayout to place it
+    view.addSubview(label)
+    
+    label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
+    view.layoutIfNeeded()
+  }
+  
   /// Set which circles in the stack view are visible
   fileprivate func setCircleVisibility() {
-   
-    /*guard let hero = hero,
-          let strArray = hero.strengths as? [String],
-          let weakArray = hero.weaknesses as? [String]
-      else { return }*/
     let hero = self.hero!
     var strArray: [String]
     var weakArray: [String]
     
+    //If the array doesn't exist then place a UIView in place of the stackview saying there aren't any items in this array
     if hero.strengths == nil {
+      
       strArray = []
       let frameWithinStackView = self.strengthStackView.frame
       let convertedFrame = self.view.convert(frameWithinStackView, from: self.strengthStackView.superview!)
       let view = UIView(frame: convertedFrame)
+
       view.backgroundColor = .red
+      
+      noItemsOverlay(with: "There are no strengths", over: view)
+      
       self.view.addSubview(view)
-      //self.view.insertSubview(view, aboveSubview: self.strengthStackView)
     } else {
       strArray = hero.strengths as! [String]
     }
@@ -150,6 +174,9 @@ class HeroDetailViewController: UIViewController {
       let convertedFrame = self.view.convert(frameWithinStackView, from: self.weaknessStackView.superview!)
       let view = UIView(frame: convertedFrame)
       view.backgroundColor = .blue
+      
+      noItemsOverlay(with: "There are no weaknesses", over: view)
+      
       self.view.addSubview(view)
     } else {
       weakArray = hero.weaknesses as! [String]
@@ -176,9 +203,7 @@ class HeroDetailViewController: UIViewController {
     
     guard let strengthStackView = self.bottomContainerView.subviews[0].subviews[0] as? UIStackView,
           let weaknessStackView = self.bottomContainerView.subviews[0].subviews[1] as? UIStackView
-      else { return }
-    
-    
+      else { return }   
     
     loadCircleImages(from: strengthArray, for: strengthStackView)
     loadCircleImages(from: weaknessArray, for: weaknessStackView)

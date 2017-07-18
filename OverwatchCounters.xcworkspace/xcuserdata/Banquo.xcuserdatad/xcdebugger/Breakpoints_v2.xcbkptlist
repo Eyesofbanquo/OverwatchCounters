@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "521905580.488992"
+            timestampString = "522035006.794591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "cloudKitConnect()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "521513685.366608"
+            timestampString = "522035133.441551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Actions>
@@ -82,11 +82,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "521905580.488992"
+            timestampString = "522035006.794591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "cloudKitConnect()"
             landmarkType = "7">
          </BreakpointContent>
@@ -114,7 +114,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "520811194.127292"
+            timestampString = "522035006.794591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -130,28 +130,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroCircleView.swift"
-            timestampString = "521568763.138475"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "layoutSubviews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OverwatchCounters/HeroCircleView.swift"
             timestampString = "521568877.587056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "createImageView()"
+            landmarkName = "createSquareFromRect()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -162,11 +146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
             landmarkName = "checkIfImageDataExists(name:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -194,27 +178,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
+            timestampString = "522032284.432968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "setCircleImages()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "setCircleImages()"
             landmarkType = "7">
          </BreakpointContent>
@@ -242,11 +210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -258,11 +226,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -274,11 +242,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -290,11 +258,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -306,11 +274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521906640.085336"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,11 +290,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
+            timestampString = "522034870.316706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "loadCircleImages(from:for:)"
             landmarkType = "7">
             <Locations>
@@ -370,11 +338,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
+            timestampString = "522032284.432968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "setCircleVisibility()"
             landmarkType = "7">
          </BreakpointContent>
@@ -386,27 +354,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
+            timestampString = "522032284.432968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "setCircleVisibility()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521904996.220343"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "setCircleVisibility()"
             landmarkType = "7">
          </BreakpointContent>
@@ -467,7 +419,7 @@
             condition = "hero.object(forKey: &quot;name&quot;) as! String == &quot;L&#xfa;cio&quot;"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "521905306.053251"
+            timestampString = "522035006.794591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -483,7 +435,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "521905402.097838"
+            timestampString = "522035006.794591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -499,11 +451,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/HeroDetailViewController.swift"
-            timestampString = "521905623.090697"
+            timestampString = "522032284.432968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "setCircleVisibility()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OverwatchCounters/HeroDetailViewController.swift"
+            timestampString = "522032284.432968"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "setCircleVisibility()"
             landmarkType = "7">
          </BreakpointContent>

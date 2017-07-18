@@ -73,6 +73,13 @@ class SplashScreenViewController: UIViewController {
             h.rowPosition = rowPosition
             h.circlePosition = rowPosition
             
+            let colors = hero.object(forKey: "colors") as! [String]
+            var convertedColors = [UIColor]()
+            for c in colors {
+              convertedColors.append(UIColor(hexString: c)!)
+            }
+            h.colors = convertedColors as! NSArray
+            
             if hero.object(forKey: "strengths") == nil {
               h.strengths = nil
             } else {
@@ -84,11 +91,6 @@ class SplashScreenViewController: UIViewController {
             } else {
               h.weaknesses = hero.object(forKey: "weaknesses") as! NSArray
             }
-            
-            /*if let heroStrengths = hero.object(forKey: "strengths") as? [String], let heroWeaknesses = hero.object(forKey: "weaknesses") as? [String] {
-              h.strengths = heroStrengths as NSArray
-              h.weaknesses = heroWeaknesses as NSArray
-            }*/
            
           }
           

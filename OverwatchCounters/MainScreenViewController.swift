@@ -82,8 +82,11 @@ extension MainScreenViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let heroCell = tableView.dequeueReusableCell(withIdentifier: "hero_cell", for: indexPath) as! HeroTableViewCell
     let hero = self.fetchController.object(at: indexPath)
+    let colors = hero.colors as! [UIColor]
+    //print(colors)
     
     heroCell.name.text = hero.name ?? "no name"
+    heroCell.backgroundColor = colors[0]
 
     heroCell.prepareForReuse()
     
@@ -105,13 +108,12 @@ extension MainScreenViewController: UITableViewDataSource {
         let image = UIImage(data: data)
         
         DispatchQueue.main.async {
-          
           heroCell.heroImage.image = image
         }
       })
       task.resume()
     } else {
-      let image = UIImage(data: imageCache.object(forKey: heroName as NSString) as! Data)
+      let image = UIImage(data: imageCache.object(forKey: heroName as NSString)! as Data)
       heroCell.heroImage.image = image
     }
     

@@ -59,11 +59,6 @@ class HeroCircleView: UIView {
       createImageView()
       createHeroLabel()
     }
-    
-//    
-//    createImageView()
-//    createCircleMask()
-//    createHeroLabel()
 
   }
   
@@ -73,7 +68,6 @@ class HeroCircleView: UIView {
     self.addSubview(heroLabel)
     self.heroLabel.textAlignment = .center
     self.heroLabel.adjustsFontSizeToFitWidth = true
-    //self.heroLabel.text = "Hero name"
     
     heroLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     heroLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true

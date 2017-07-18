@@ -18,20 +18,9 @@ class HeroTableViewCell: UITableViewCell {
     // Initialization code
   }
   
-  /*func loadImage(_ hero: HeroMO){
-    let session = URLSession.shared
-    let task = session.dataTask(with: URL(string:hero.image!)!, completionHandler: {
-      data, response, error in
-      let image = UIImage(data: data!)
-      DispatchQueue.main.async {
-        self.heroImage.image = image
-      }
-    })
-    task.resume()
-  }*/
-  
   override func prepareForReuse() {
     self.heroImage.image = nil
+    //self.backgroundColor = .white
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

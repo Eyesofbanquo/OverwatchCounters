@@ -14,17 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Nimble.xcscheme</key>
+		<key>Pods-OverwatchCounters-OverwatchCountersTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-OverwatchCounters.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +32,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0921CC2F4398BE9A4F1CEACB30684B56</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>44D946C5C575F1DFA9DA4D256EC69467</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4D1E67315C70937E5188E39AA35B49B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87EA630B03B4FFC8DE27774970142603</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88621A1E72A3369271BF7887B2F37D68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDFFD3F4597931AECEBCC9E61B871055</key>
+		<key>D2D1E0494C33D676622533664768CA3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

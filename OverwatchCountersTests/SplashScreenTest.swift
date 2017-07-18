@@ -1,21 +1,21 @@
 //
-//  OverwatchCountersTests.swift
-//  OverwatchCountersTests
+//  SplashScreenTest.swift
+//  OverwatchCounters
 //
 //  Created by Markim Shaw on 7/17/17.
 //  Copyright © 2017 Markim Shaw. All rights reserved.
 //
 
 import XCTest
-import Nimble
 import Quick
+//import Nimble
 
-class OverwatchCountersTests: XCTestCase {
+
+class SplashScreenTest: QuickSpec {
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-      
     }
     
     override func tearDown() {
@@ -26,6 +26,7 @@ class OverwatchCountersTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+      
     }
     
     func testPerformanceExample() {
