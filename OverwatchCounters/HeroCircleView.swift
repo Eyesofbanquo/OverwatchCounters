@@ -77,7 +77,7 @@ class HeroCircleView: UIView {
     self.heroLabelBackgroundView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     self.heroLabelBackgroundView.heightAnchor.constraint(equalToConstant: self.bounds.height * 0.30).isActive = true
     self.heroLabelBackgroundView.backgroundColor = .black
-    self.heroLabelBackgroundView.alpha = 0.3
+    self.heroLabelBackgroundView.alpha = 0.0
     //view.
     
     //view.addSubview(heroLabel)
@@ -91,6 +91,14 @@ class HeroCircleView: UIView {
     //heroLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
     heroLabel.font = UIFont(name: "BigNoodleTitling", size: 24.0)
+    heroLabel.alpha = 0.0
+  }
+  
+  func animateLabel() {
+    UIView.animate(withDuration: 0.4, animations: {
+      self.heroLabel.alpha = 1.0
+      self.heroLabelBackgroundView.alpha = 0.3
+    })
   }
   
   func createImageView() {

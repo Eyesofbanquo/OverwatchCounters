@@ -19,6 +19,7 @@ class HeroTableViewCell: UITableViewCell {
   }
   
   override func prepareForReuse() {
+    
     self.heroImage.image = nil
     //self.backgroundColor = .white
   }

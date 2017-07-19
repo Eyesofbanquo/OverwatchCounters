@@ -27,6 +27,7 @@ class HeroDetailViewController: UIViewController {
   var imageScale: CGFloat = 0.5
   var managedObjectContext: NSManagedObjectContext!
   var detailInformation: [String: [HeroMO]] = [:]
+  var currentColor: UIColor = UIColor.flatWhite
   
   weak var sharedImageCache: NSCache<NSString, NSData>?
   
@@ -35,6 +36,8 @@ class HeroDetailViewController: UIViewController {
     
     self.strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
     self.weaknessStackView = bottomContainerView.subviews[0].subviews[1] as! UIStackView
+    
+    //self.setNeedsStatusBarAppearanceUpdate()
     
     Measure.run {
       initialization()
@@ -71,6 +74,16 @@ class HeroDetailViewController: UIViewController {
     
     self.title = heroName
     self.topContainerView.backgroundColor = heroColors[0]
+    self.bottomContainerView.backgroundColor = heroColors[1]
+    
+    if let navbar = self.navigationController?.navigationBar {
+      //navbar.barTintColor = heroColors[2]
+      navbar.barTintColor = heroColors[2]
+      navbar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(heroColors[2], returnFlat: true)]
+      self.currentColor = heroColors[2]
+      //self.navigationController?.setNeedsStatusBarAppearanceUpdate()
+    }
+
     
     detailInformation["strengths"] = []
     detailInformation["weaknesses"] = []
@@ -88,11 +101,17 @@ class HeroDetailViewController: UIViewController {
     let predicate = NSPredicate(format: "name == %@", heroName)
     fetchRequest.predicate = predicate
     
-    if let heroObject = try? self.managedObjectContext.fetch(fetchRequest), let hero = heroObject.first, let heroName = hero.name as NSString?, let imageCache = self.sharedImageCache, let imageData = imageCache.object(forKey: heroName) as Data?, let image = UIImage(data: imageData){
+    if let heroObject = try? self.managedObjectContext.fetch(fetchRequest), let hero = heroObject.first, let heroName = hero.name as NSString?, let url = URL(string: hero.image!){
       
-      self.heroImageView.image = image
-      
-      self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
+      //self.heroImageView.image = image
+      //self.heroImageView.kf.setImage(with: url)
+      self.heroImageView.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
+        image, error, cache, url in
+        guard let image = image else { return }
+        self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
+        self.heroImageView.frame.size = self.heroImageView.frame.offsetBy(dx: 0.0, dy: 100.0).size
+      })
+//      self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
       
       self.heroImageView.center = topContainerView.center
       
@@ -259,7 +278,6 @@ class HeroDetailViewController: UIViewController {
     for (index, hero) in array.enumerated() {
       guard let name = hero.name as NSString?,
             let position = hero.circlePosition,
-            let imageCache = self.sharedImageCache,
             let colors = hero.colors as? [UIColor]
       else { return }
       
@@ -270,34 +288,43 @@ class HeroDetailViewController: UIViewController {
       circle.heroLabel.textColor = colors[2]
       circle.backgroundColor = colors[0]
       
+      let heroURL = URL(string: array[index].image!)
+      circle.imageView.kf.setImage(with: heroURL, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
+        image, error, cache, url in
+        guard let image = image else { return }
+        circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
+        circle.animateLabel()
+      })
+      
       var image: UIImage?
       //If the image data exists them load it from the cache. If not then download the image with URLSession.shared
-      if checkIfImageDataExists(name: name) {
-        image = UIImage(data: imageCache.object(forKey: name)! as Data)
-        circle.imageView.frame.size = image!.size
-        circle.imageView.image = image
-        circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
-        
-      } else {
-        let heroURL = URL(string: array[index].image!)
-        let task = URLSession.shared.dataTask(with: heroURL!, completionHandler: {
-          data, response, error in
-          
-          guard let data = data,
-                let image = UIImage(data: data)
-          else { return }
-          
-          
-          DispatchQueue.main.async {
-            circle.imageView.frame.size = image.size
-            circle.imageView.image = image
-            circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
-            //let averageColor = UIColor(averageColorFrom: image)
-            //circle.heroLabel.textColor = ContrastColorOf(averageColor, returnFlat: true)
-          }
-        })
-        task.resume()
-      }
+//      if checkIfImageDataExists(name: name) {
+//        image = UIImage(data: imageCache.object(forKey: name)! as Data)
+//        circle.imageView.frame.size = image!.size
+//        circle.imageView.image = image
+//        circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
+//        
+//      } else {
+//        let heroURL = URL(string: array[index].image!)
+//        let task = URLSession.shared.dataTask(with: heroURL!, completionHandler: {
+//          data, response, error in
+//          
+//          guard let data = data,
+//                let image = UIImage(data: data)
+//          else { return }
+//          
+//          
+//          DispatchQueue.main.async {
+//            circle.imageView.frame.size = image.size
+//            circle.imageView.image = image
+//            circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
+//            circle.animateLabel()
+//            //let averageColor = UIColor(averageColorFrom: image)
+//            //circle.heroLabel.textColor = ContrastColorOf(averageColor, returnFlat: true)
+//          }
+//        })
+//        task.resume()
+//      }
     }
   }
   
@@ -310,13 +337,18 @@ class HeroDetailViewController: UIViewController {
     return false
   }
   
+  /*override var preferredStatusBarStyle: UIStatusBarStyle {
+    if case UIColor.flatWhite = ContrastColorOf(currentColor, returnFlat: true) {
+      return .lightContent
+    } else {
+      return .default
+    }
+  }*/
+  
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-    if self.sharedImageCache != nil {
-      self.sharedImageCache!.removeAllObjects()
-
-    }
   }
 
 }

@@ -3,11 +3,13 @@ PODS:
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - Hero (0.3.2)
+  - Kingfisher (3.4.0)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Hero
+  - Kingfisher (~> 3.0)
   - SnapKit (~> 3.0)
 
 EXTERNAL SOURCES:
@@ -22,8 +24,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: 48f8df6798d16d35935cfbb0726c5fbbd23cfe5a
+  Kingfisher: 5690cfb3d1bddf3a98d679a3a34d0b7294974ed2
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: bc73a6c71984f81437dbeb6fcadd73488599f153
+PODFILE CHECKSUM: da60ab022e27181c0dccac2784b23395b76cec3d
 
 COCOAPODS: 1.2.0

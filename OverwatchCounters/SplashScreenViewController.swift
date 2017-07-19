@@ -41,6 +41,8 @@ class SplashScreenViewController: UIViewController {
       records, error in
       
       if error != nil {
+        //Display an alert saying you must enable iCloud account + cloud drive
+        print(error)
         print("Something terribly wrong has happened")
         return
       }
@@ -51,6 +53,9 @@ class SplashScreenViewController: UIViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let moc = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         moc.persistentStoreCoordinator = context.persistentStoreCoordinator
+        
+        var hs: [HeroMO] = []
+        
         moc.perform {
           for hero in heroes {
             let h = HeroMO(context: context)
@@ -91,7 +96,7 @@ class SplashScreenViewController: UIViewController {
             } else {
               h.weaknesses = hero.object(forKey: "weaknesses") as! NSArray
             }
-           
+           hs.append(h)
           }
           
           do {
@@ -103,6 +108,9 @@ class SplashScreenViewController: UIViewController {
               let destinationStoryboard = UIStoryboard(name: "MainScreen", bundle: nil)
               //let destination = destinationStoryboard.instantiateViewController(withIdentifier: "MainScreen") as! MainScreenViewController
               let destination = destinationStoryboard.instantiateViewController(withIdentifier: "NavigationMainScreen") as! UINavigationController
+              let vc = destination.viewControllers[0] as! MainScreenViewController
+              vc.heroes = hs
+              
               self.present(destination, animated: true, completion: nil)
             }
           } catch {

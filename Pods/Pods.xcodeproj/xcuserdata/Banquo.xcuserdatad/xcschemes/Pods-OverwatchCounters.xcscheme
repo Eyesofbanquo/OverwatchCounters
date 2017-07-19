@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2D1E0494C33D676622533664768CA3A"
+               BlueprintIdentifier = "FAB5B5EFAAA3203BE23EDE8632650CC7"
                BuildableName = "Pods_OverwatchCounters.framework"
                BlueprintName = "Pods-OverwatchCounters"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2D1E0494C33D676622533664768CA3A"
+            BlueprintIdentifier = "FAB5B5EFAAA3203BE23EDE8632650CC7"
             BuildableName = "Pods_OverwatchCounters.framework"
             BlueprintName = "Pods-OverwatchCounters"
             ReferencedContainer = "container:Pods.xcodeproj">
