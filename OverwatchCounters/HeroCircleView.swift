@@ -136,6 +136,7 @@ class HeroCircleView: UIView {
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    self.backgroundColor = .clear
   }
 
 }

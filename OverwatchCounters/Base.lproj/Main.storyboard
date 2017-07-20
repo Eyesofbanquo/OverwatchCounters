@@ -27,19 +27,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-th-aJo">
-                                <rect key="frame" x="156" y="293" width="102" height="38"/>
+                                <rect key="frame" x="156.33333333333337" y="292.66666666666669" width="101.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overwatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-2U-yhK">
-                                <rect key="frame" x="104" y="220" width="207" height="65"/>
+                                <rect key="frame" x="104.66666666666666" y="220" width="206.33333333333334" height="64.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUp-fk-1xL" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                <rect key="frame" x="136" y="469" width="20" height="20"/>
+                                <rect key="frame" x="136" y="468.66666666666669" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="X0v-Pg-qLH"/>
@@ -55,7 +55,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-eD-xj0" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                <rect key="frame" x="197" y="469" width="20" height="20"/>
+                                <rect key="frame" x="197" y="468.66666666666669" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="HWy-AM-0HF"/>
@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tf-AX-mdo" customClass="CircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                <rect key="frame" x="258" y="469" width="20" height="20"/>
+                                <rect key="frame" x="258" y="468.66666666666669" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="LV9-4u-4zw"/>

@@ -29,11 +29,7 @@ class MainScreenViewController: UIViewController {
     self.tableView.delegate = self
     self.tableView.dataSource = self
     self.tableView.separatorStyle = .none
-    //self.tableView.prefetchDataSource = self
     
-//    self.imageCache = NSCache()
-
-//    self.initializeFetchController()
     self.sortedHeroes = self.heroes!.sorted(by: {
       return $0.0.name! < $0.1.name!
     })
@@ -59,17 +55,12 @@ class MainScreenViewController: UIViewController {
     
   }
   
-  /*override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
-  }*/
-  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let heroCell = sender as? HeroTableViewCell, let indexPath = self.tableView.indexPath(for: heroCell) {
-//      let heroObject = fetchController.object(at: indexPath)
       let heroObject = sortedHeroes[indexPath.row]
       let destination = segue.destination as! HeroDetailViewController
-      //destination.sharedImageCache = self.imageCache
-      destination.hero = heroObject      
+      destination.hero = heroObject
+      destination.sortedHeroes = self.sortedHeroes
     }
   }
   
@@ -102,10 +93,7 @@ extension MainScreenViewController: NSFetchedResultsControllerDelegate {
 extension MainScreenViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let heroCell = tableView.dequeueReusableCell(withIdentifier: "hero_cell", for: indexPath) as! HeroTableViewCell
-//    let hero = self.fetchController.object(at: indexPath)
-//    let hero = self.heroes!.sorted(by: {
-//      return $0.0.name! < $0.1.name!
-//    })[indexPath.row]
+    
     let hero = sortedHeroes[indexPath.row]
     
     let colors = hero.colors as! [UIColor]
@@ -119,54 +107,15 @@ extension MainScreenViewController: UITableViewDataSource {
           let heroName = hero.name
       else { return UITableViewCell() }
     
-//    if imageCache.object(forKey: heroName as NSString) == nil {
-//      self.downloader.download(URLRequest(url: url), completion: {
-//        response in
-//        if let image = response.result.value {
-//          heroCell.heroImage.image = image
-//          
-//          self.imageCache.setObject(response.result.value!, forKey: heroName as NSString)
-//          //self.cache.add(image, withIdentifier: heroName)
-//        }
-//      })
-//      //heroCell.heroImage.
-//      //self.imageCache.setObject(heroCell.heroImage.image!, forKey: heroName as NSString)
-//    } else {
-//      heroCell.heroImage.image = imageCache.object(forKey: heroName as NSString)!
-//    }
-    heroCell.heroImage.kf.setImage(with: url)
-    
-    
-    /*if imageCache.object(forKey: heroName as NSString) == nil {
-      
-      let session = URLSession.shared
-      let task = session.dataTask(with: url, completionHandler: {
-        data, response, error in
-        
-        guard let data = data else { return }
-        
-        
-        let image = UIImage(data: data)
-        self.imageCache.setObject(image!, forKey: heroName as NSString)
-
-        
-        DispatchQueue.main.async {
-          heroCell.heroImage.image = image
-        }
-      })
-      task.resume()
-    } else {
-      DispatchQueue.global().async {
-        let image = self.imageCache.object(forKey: heroName as NSString)!
-        DispatchQueue.main.async {
-          heroCell.heroImage.image = image
-        }
-      }
-    }*/
+    let resource = ImageResource(downloadURL: url, cacheKey: heroName)
+    //heroCell.heroImage.kf.indicatorType = .activity
+    heroCell.heroImage.kf.setImage(with: resource)
     
     guard let x = hero.rowPosition?.x, let y = hero.rowPosition?.y, let width = hero.rowPosition?.width, let height = hero.rowPosition?.height else { return  UITableViewCell() }
     heroCell.heroImage.frame = CGRect(x: x, y: y, width: width, height: height)
     heroCell.name.textColor = .white
+    
+    heroCell.selectionStyle = .none
 
     return heroCell
   }
@@ -177,9 +126,6 @@ extension MainScreenViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//    guard let sections = fetchController.sections else { return 0 }
-//    let sectionInfo = sections[section]
-//    return sectionInfo.numberOfObjects
     return self.heroes!.count
   }
 
@@ -194,7 +140,6 @@ extension MainScreenViewController: UIScrollViewDelegate {
       else { return }
     if self.previousIndexPath == nil {
       self.previousIndexPath = indexPath
-//      let cell = self.fetchController.object(at: indexPath)
       let cell = self.sortedHeroes[indexPath.row]
       let colors = cell.colors as! [UIColor]
       self.navigationController?.navigationBar.barTintColor = colors[2]
@@ -205,7 +150,6 @@ extension MainScreenViewController: UIScrollViewDelegate {
       return
     } else {
       self.previousIndexPath = indexPath
-//      let cell = self.fetchController.object(at: indexPath)
       let cell = self.sortedHeroes[indexPath.row]
       let colors = cell.colors as! [UIColor]
       self.navigationController?.navigationBar.barTintColor = colors[2]

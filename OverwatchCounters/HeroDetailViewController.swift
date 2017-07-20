@@ -9,10 +9,17 @@
 import UIKit
 import ChameleonFramework
 import CoreData
+import Kingfisher
 
 
 func *(lhs: CGSize, rhs: CGFloat) -> CGSize {
   return CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
+}
+
+extension UINavigationController {
+  override open var preferredStatusBarStyle: UIStatusBarStyle {
+    return self.topViewController!.preferredStatusBarStyle
+  }
 }
 
 class HeroDetailViewController: UIViewController {
@@ -30,14 +37,13 @@ class HeroDetailViewController: UIViewController {
   var currentColor: UIColor = UIColor.flatWhite
   
   weak var sharedImageCache: NSCache<NSString, NSData>?
+  var sortedHeroes: [HeroMO]!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
     self.weaknessStackView = bottomContainerView.subviews[0].subviews[1] as! UIStackView
-    
-    //self.setNeedsStatusBarAppearanceUpdate()
     
     Measure.run {
       initialization()
@@ -74,14 +80,15 @@ class HeroDetailViewController: UIViewController {
     
     self.title = heroName
     self.topContainerView.backgroundColor = heroColors[0]
+    self.topContainerView.clipsToBounds = true
     self.bottomContainerView.backgroundColor = heroColors[1]
     
     if let navbar = self.navigationController?.navigationBar {
-      //navbar.barTintColor = heroColors[2]
-      navbar.barTintColor = heroColors[2]
-      navbar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(heroColors[2], returnFlat: true)]
-      self.currentColor = heroColors[2]
-      //self.navigationController?.setNeedsStatusBarAppearanceUpdate()
+      navbar.barTintColor = heroColors[0]
+      navbar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(heroColors[0], returnFlat: true)]
+      navbar.tintColor = ContrastColorOf(heroColors[0], returnFlat: true)
+      self.currentColor = heroColors[0]
+      self.navigationController?.setNeedsStatusBarAppearanceUpdate()
     }
 
     
@@ -101,19 +108,21 @@ class HeroDetailViewController: UIViewController {
     let predicate = NSPredicate(format: "name == %@", heroName)
     fetchRequest.predicate = predicate
     
-    if let heroObject = try? self.managedObjectContext.fetch(fetchRequest), let hero = heroObject.first, let heroName = hero.name as NSString?, let url = URL(string: hero.image!){
+    if  let hero = self.hero, let heroName = hero.name, let url = URL(string: hero.image!){
       
-      //self.heroImageView.image = image
-      //self.heroImageView.kf.setImage(with: url)
-      self.heroImageView.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
+      let resource = ImageResource(downloadURL: url, cacheKey: heroName)
+      
+      self.heroImageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
         image, error, cache, url in
         guard let image = image else { return }
+        //self.heroImageView.frame = CGRect(x: self.topContainerView.center.x, y: self.topContainerView.center.y, width: 0.0, height: 0.0)
+        
         self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
-        self.heroImageView.frame.size = self.heroImageView.frame.offsetBy(dx: 0.0, dy: 100.0).size
+        self.heroImageView.center = self.topContainerView.center
+        
+        self.heroImageView.frame = self.heroImageView.frame.offsetBy(dx: 0.0, dy: self.heroImageView.frame.height / 4)
       })
-//      self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
       
-      self.heroImageView.center = topContainerView.center
       
     }
   }
@@ -129,11 +138,10 @@ class HeroDetailViewController: UIViewController {
       let strengths = h.strengths as! [String]
       
       for s in strengths {
-        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
-        let predicate = NSPredicate(format: "name == %@", s)
-        fetch.predicate = predicate
-        
-        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
+        let hero = self.sortedHeroes.filter({
+          return $0.name == s
+        })
+        if let hero = hero.first {
           detailInformation["strengths"]?.append(hero)
         }
       }
@@ -146,39 +154,14 @@ class HeroDetailViewController: UIViewController {
       let weaknesses = h.weaknesses as! [String]
       
       for w in weaknesses {
-        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
-        let predicate = NSPredicate(format: "name == %@", w)
-        fetch.predicate = predicate
-        
-        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
+        let hero = self.sortedHeroes.filter {
+          return $0.name == w
+        }
+        if let hero = hero.first {
           detailInformation["weaknesses"]?.append(hero)
         }
       }
     }
-    
-    /*if let h = self.hero, let strengths = h.strengths as? [String] {
-      for s in strengths {
-        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
-        let predicate = NSPredicate(format: "name == %@", s)
-        fetch.predicate = predicate
-        
-        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
-          detailInformation["strengths"]?.append(hero)
-        }
-      }
-    }
-    
-    if let h = self.hero, let weaknesses = h.weaknesses as? [String] {
-      for w in weaknesses {
-        let fetch = NSFetchRequest<HeroMO>(entityName: "Hero")
-        let predicate = NSPredicate(format: "name == %@", w)
-        fetch.predicate = predicate
-        
-        if let heroes = try? managedObjectContext.fetch(fetch), let hero = heroes.first {
-          detailInformation["weaknesses"]?.append(hero)
-        }
-      }
-    }*/
   }
   
   /// Overlay over the stackview that only displays if the strengths/weaknesses array is nil
@@ -222,7 +205,9 @@ class HeroDetailViewController: UIViewController {
       let convertedFrame = self.view.convert(frameWithinStackView, from: self.strengthStackView.superview!)
       let view = UIView(frame: convertedFrame)
 
-      view.backgroundColor = .red
+      if let colors = hero.colors as? [UIColor] {
+        view.backgroundColor = colors[2]
+      }
       
       noItemsOverlay(with: "There are no strengths", over: view)
       self.view.addSubview(view)
@@ -235,7 +220,10 @@ class HeroDetailViewController: UIViewController {
       let frameWithinStackView = self.weaknessStackView.frame
       let convertedFrame = self.view.convert(frameWithinStackView, from: self.weaknessStackView.superview!)
       let view = UIView(frame: convertedFrame)
-      view.backgroundColor = .blue
+      
+      if let colors = hero.colors as? [UIColor] {
+        view.backgroundColor = colors[2]
+      }
       
       noItemsOverlay(with: "There are no weaknesses", over: view)
       
@@ -243,9 +231,6 @@ class HeroDetailViewController: UIViewController {
     } else {
       weakArray = hero.weaknesses as! [String]
     }
-    
-    //self.detailInformation["strengths"] = strArray
-    //self.detailInformation["weaknesses"] = weakArray
     
     if strArray.count < 3 {
       let endIndex = strArray.count
@@ -276,55 +261,27 @@ class HeroDetailViewController: UIViewController {
   
   func loadCircleImages(from array: [HeroMO], for stackView: UIStackView) {
     for (index, hero) in array.enumerated() {
-      guard let name = hero.name as NSString?,
+      guard let name = hero.name,
             let position = hero.circlePosition,
-            let colors = hero.colors as? [UIColor]
+            let colors = hero.colors as? [UIColor],
+            let url = URL(string: array[index].image!)
       else { return }
       
       guard let circle = stackView.arrangedSubviews[index] as? HeroCircleView
       else { return }
 
-      circle.heroLabel.text = name as String
+      circle.heroLabel.text = name
       circle.heroLabel.textColor = colors[2]
       circle.backgroundColor = colors[0]
       
-      let heroURL = URL(string: array[index].image!)
-      circle.imageView.kf.setImage(with: heroURL, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
+      //let heroURL = URL(string: array[index].image!)
+      let resource = ImageResource(downloadURL: url, cacheKey: name)
+      circle.imageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
         image, error, cache, url in
         guard let image = image else { return }
         circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
         circle.animateLabel()
       })
-      
-      var image: UIImage?
-      //If the image data exists them load it from the cache. If not then download the image with URLSession.shared
-//      if checkIfImageDataExists(name: name) {
-//        image = UIImage(data: imageCache.object(forKey: name)! as Data)
-//        circle.imageView.frame.size = image!.size
-//        circle.imageView.image = image
-//        circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
-//        
-//      } else {
-//        let heroURL = URL(string: array[index].image!)
-//        let task = URLSession.shared.dataTask(with: heroURL!, completionHandler: {
-//          data, response, error in
-//          
-//          guard let data = data,
-//                let image = UIImage(data: data)
-//          else { return }
-//          
-//          
-//          DispatchQueue.main.async {
-//            circle.imageView.frame.size = image.size
-//            circle.imageView.image = image
-//            circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
-//            circle.animateLabel()
-//            //let averageColor = UIColor(averageColorFrom: image)
-//            //circle.heroLabel.textColor = ContrastColorOf(averageColor, returnFlat: true)
-//          }
-//        })
-//        task.resume()
-//      }
     }
   }
   
@@ -337,13 +294,13 @@ class HeroDetailViewController: UIViewController {
     return false
   }
   
-  /*override var preferredStatusBarStyle: UIStatusBarStyle {
+  override var preferredStatusBarStyle: UIStatusBarStyle {
     if case UIColor.flatWhite = ContrastColorOf(currentColor, returnFlat: true) {
       return .lightContent
     } else {
       return .default
     }
-  }*/
+  }
   
   
   override func didReceiveMemoryWarning() {
