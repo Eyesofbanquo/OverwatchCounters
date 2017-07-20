@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w2D-Lo-hCt">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="big_noodle_titling.ttf">
+            <string>BigNoodleTitling</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Title-->
         <scene sceneID="MWd-f7-kfM">
@@ -19,14 +24,14 @@
                         <viewControllerLayoutGuide type="bottom" id="l4x-hP-O5E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mgO-tp-9za">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uAj-at-aWr" userLabel="Container">
-                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URk-Fa-p4U" userLabel="Top container view">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2q-2X-s7w">
                                                 <rect key="frame" x="0.0" y="0.0" width="328" height="274"/>
@@ -36,64 +41,112 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCv-4d-d22" userLabel="Bottom container view">
-                                        <rect key="frame" x="0.0" y="252" width="328" height="252"/>
+                                        <rect key="frame" x="0.0" y="336" width="414" height="336"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1pH-ms-qFB">
-                                                <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-W0-s9Y" userLabel="Strengths">
-                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="126"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-JU-VHF" userLabel="Super Strength">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69C-2Z-Zp2" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="109.5" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
-                                                                        <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelHeight">
-                                                                        <real key="value" value="0.0"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelWidth">
-                                                                        <real key="value" value="0.0"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-6W-Zjd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Against" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7u-Iu-j2e">
+                                                                        <rect key="frame" x="8" y="5" width="398" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="o7u-Iu-j2e" firstAttribute="top" secondItem="udQ-6W-Zjd" secondAttribute="top" constant="5" id="97S-SH-Ui0"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="o7u-Iu-j2e" secondAttribute="bottom" constant="4" id="Bpv-g6-sCK"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="o7u-Iu-j2e" secondAttribute="trailing" constant="8" id="jvl-8E-YY6"/>
+                                                                    <constraint firstItem="o7u-Iu-j2e" firstAttribute="leading" secondItem="udQ-6W-Zjd" secondAttribute="leading" constant="8" id="qa4-Kf-1eS"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="u7o-66-aED"/>
+                                                                </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gig-jb-Rlh" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="109.5" y="0.0" width="109" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
-                                                                        <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTh-K8-QfM" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="218.5" y="0.0" width="109.5" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
-                                                                        <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-W0-s9Y" userLabel="Strengths">
+                                                                <rect key="frame" x="0.0" y="30" width="414" height="138"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69C-2Z-Zp2" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
+                                                                                <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="labelHeight">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="labelWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gig-jb-Rlh" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="138" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
+                                                                                <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTh-K8-QfM" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="276" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="imageViewColor">
+                                                                                <color key="value" red="0.33725490200000002" green="0.94901960780000005" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bms-4r-b3U" userLabel="Weaknesses">
-                                                        <rect key="frame" x="0.0" y="126" width="328" height="126"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QdW-dO-tTq">
+                                                        <rect key="frame" x="0.0" y="168" width="414" height="168"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Su-9dD" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="109.5" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xct-Hi-B9o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weak Against" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-Tu-6LJ">
+                                                                        <rect key="frame" x="8" y="5" width="398" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="wSy-Tu-6LJ" firstAttribute="leading" secondItem="xct-Hi-B9o" secondAttribute="leading" constant="8" id="3w5-pK-9u3"/>
+                                                                    <constraint firstItem="wSy-Tu-6LJ" firstAttribute="top" secondItem="xct-Hi-B9o" secondAttribute="top" constant="5" id="Qa7-eW-h3z"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="wSy-Tu-6LJ" secondAttribute="bottom" constant="4" id="aEV-g7-YzY"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="l1t-8K-xBa"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="wSy-Tu-6LJ" secondAttribute="trailing" constant="8" id="phZ-nQ-Ynb"/>
+                                                                </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-Wo-agU" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="109.5" y="0.0" width="109" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Id-gpk" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
-                                                                <rect key="frame" x="218.5" y="0.0" width="109.5" height="126"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bms-4r-b3U" userLabel="Weaknesses">
+                                                                <rect key="frame" x="0.0" y="30" width="414" height="138"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Su-9dD" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-Wo-agU" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="138" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Id-gpk" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">
+                                                                        <rect key="frame" x="276" y="0.0" width="138" height="138"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -144,7 +197,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fax-Lb-uha"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xTZ-dp-aEc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdc-uW-CkY" customClass="HeroCircleView" customModule="OverwatchCounters" customModuleProvider="target">

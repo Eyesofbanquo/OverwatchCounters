@@ -27,7 +27,9 @@ class HeroDetailViewController: UIViewController {
   @IBOutlet weak var topContainerView: UIView!
   @IBOutlet weak var bottomContainerView: UIView!
   var strengthStackView: UIStackView!
+  var strengthView: UIView!
   var weaknessStackView: UIStackView!
+  var weaknessView: UIView!
 
   weak var hero: HeroMO?
   var heroImageView: UIImageView!
@@ -42,8 +44,14 @@ class HeroDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.strengthStackView = bottomContainerView.subviews[0].subviews[0] as! UIStackView
-    self.weaknessStackView = bottomContainerView.subviews[0].subviews[1] as! UIStackView
+    self.strengthStackView = bottomContainerView.subviews[0].subviews[0].subviews[1] as! UIStackView
+    self.strengthView = bottomContainerView.subviews[0].subviews[0].subviews[0]
+    self.strengthView.alpha = 0.0
+    
+    self.weaknessStackView = bottomContainerView.subviews[0].subviews[1].subviews[1] as! UIStackView
+    self.weaknessView = bottomContainerView.subviews[0].subviews[1].subviews[0]
+    self.weaknessView.alpha = 0.0
+    
     
     Measure.run {
       initialization()
@@ -95,7 +103,16 @@ class HeroDetailViewController: UIViewController {
     detailInformation["strengths"] = []
     detailInformation["weaknesses"] = []
     
-    managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    self.strengthView.backgroundColor = heroColors[1]
+    (self.strengthView.subviews[0] as! UILabel).textColor = ContrastColorOf(self.strengthView.backgroundColor!, returnFlat: true)
+    
+    self.weaknessView.backgroundColor = heroColors[1]
+    (self.weaknessView.subviews[0] as! UILabel).textColor = ContrastColorOf(self.weaknessView.backgroundColor!, returnFlat: true)
+    
+    UIView.animate(withDuration: 0.4, animations: {
+      self.strengthView.alpha = 1.0
+      self.weaknessView.alpha = 1.0
+    })
     
     self.loadStrengthsWeaknesses()
   }
@@ -115,7 +132,6 @@ class HeroDetailViewController: UIViewController {
       self.heroImageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
         image, error, cache, url in
         guard let image = image else { return }
-        //self.heroImageView.frame = CGRect(x: self.topContainerView.center.x, y: self.topContainerView.center.y, width: 0.0, height: 0.0)
         
         self.heroImageView.frame.size = CGSize(width: image.size.width, height: image.size.height) * self.imageScale
         self.heroImageView.center = self.topContainerView.center
@@ -169,7 +185,7 @@ class HeroDetailViewController: UIViewController {
   /// - Parameters:
   ///   - text: the text to display
   ///   - view: the stackview
-  fileprivate func noItemsOverlay(with text: String, over view: UIView){
+  fileprivate func noItemsOverlay(with text: String, and color: UIColor, over view: UIView){
     /// Text label that will display 'there are no strengths/weaknesses'
     let label = UILabel()
     label.text = text
@@ -177,7 +193,7 @@ class HeroDetailViewController: UIViewController {
     label.textAlignment = .center
     label.adjustsFontSizeToFitWidth = true
     label.font = UIFont(name: "BigNoodleTitling", size: 12.0)
-    label.textColor = .white
+    label.textColor = ContrastColorOf(color, returnFlat: true)
     
     //add label to subview and use autolayout to place it
     view.addSubview(label)
@@ -207,9 +223,9 @@ class HeroDetailViewController: UIViewController {
 
       if let colors = hero.colors as? [UIColor] {
         view.backgroundColor = colors[2]
+        noItemsOverlay(with: "Not strong against any heroes.", and: colors[2], over: view)
       }
       
-      noItemsOverlay(with: "There are no strengths", over: view)
       self.view.addSubview(view)
     } else {
       strArray = hero.strengths as! [String]
@@ -223,9 +239,9 @@ class HeroDetailViewController: UIViewController {
       
       if let colors = hero.colors as? [UIColor] {
         view.backgroundColor = colors[2]
+        noItemsOverlay(with: "Not weak against any heroes.", and: colors[2], over: view)
       }
       
-      noItemsOverlay(with: "There are no weaknesses", over: view)
       
       self.view.addSubview(view)
     } else {
@@ -276,22 +292,13 @@ class HeroDetailViewController: UIViewController {
       
       //let heroURL = URL(string: array[index].image!)
       let resource = ImageResource(downloadURL: url, cacheKey: name)
-      circle.imageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
+      circle.imageView.kf.setImage(with: resource, placeholder: nil, options: [.transition(.fade(0.2))], progressBlock: nil, completionHandler: {
         image, error, cache, url in
         guard let image = image else { return }
         circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)
         circle.animateLabel()
       })
     }
-  }
-  
-  fileprivate func checkIfImageDataExists(name: NSString) -> Bool {
-    guard let imageCache = self.sharedImageCache else { return false }
-    if imageCache.object(forKey: name) != nil {
-      return true
-    }
-    
-    return false
   }
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
