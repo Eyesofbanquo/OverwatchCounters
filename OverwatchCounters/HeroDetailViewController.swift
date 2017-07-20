@@ -16,13 +16,29 @@ func *(lhs: CGSize, rhs: CGFloat) -> CGSize {
   return CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
 }
 
+protocol StatusAnimator {
+  var currentColor: UIColor! { get set }
+  
+  
+}
+
+extension StatusAnimator {
+  var preferredStatusBarStyle: UIStatusBarStyle {
+    if case UIColor.flatWhite = ContrastColorOf(currentColor, returnFlat: true) {
+      return .lightContent
+    } else {
+      return .default
+    }
+  }
+}
+
 extension UINavigationController {
   override open var preferredStatusBarStyle: UIStatusBarStyle {
     return self.topViewController!.preferredStatusBarStyle
   }
 }
 
-class HeroDetailViewController: UIViewController {
+class HeroDetailViewController: UIViewController, StatusAnimator {
   
   @IBOutlet weak var topContainerView: UIView!
   @IBOutlet weak var bottomContainerView: UIView!
@@ -36,7 +52,7 @@ class HeroDetailViewController: UIViewController {
   var imageScale: CGFloat = 0.5
   var managedObjectContext: NSManagedObjectContext!
   var detailInformation: [String: [HeroMO]] = [:]
-  var currentColor: UIColor = UIColor.flatWhite
+  var currentColor: UIColor! = .white
   
   weak var sharedImageCache: NSCache<NSString, NSData>?
   var sortedHeroes: [HeroMO]!

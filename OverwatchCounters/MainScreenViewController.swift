@@ -11,7 +11,7 @@ import ChameleonFramework
 import CoreData
 import Kingfisher
 
-class MainScreenViewController: UIViewController {
+class MainScreenViewController: UIViewController, StatusAnimator {
   
   @IBOutlet weak var tableView: UITableView!
   var fetchController: NSFetchedResultsController<HeroMO>!
@@ -21,6 +21,7 @@ class MainScreenViewController: UIViewController {
   var heroes: [HeroMO]?
   var sortedHeroes: [HeroMO]!
   var loadingNextView: Bool = false
+  var currentColor: UIColor! = .white
     
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,6 +34,7 @@ class MainScreenViewController: UIViewController {
     self.sortedHeroes = self.heroes!.sorted(by: {
       return $0.0.name! < $0.1.name!
     })
+    self.currentColor = .white
     
   }
   
@@ -66,6 +68,14 @@ class MainScreenViewController: UIViewController {
   
   @IBAction func unwindSegue(segue: UIStoryboardSegue) {
     self.loadingNextView = false
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    if case UIColor.flatWhite = ContrastColorOf(currentColor, returnFlat: true) {
+      return .lightContent
+    } else {
+      return .default
+    }
   }
   
 }
@@ -143,7 +153,10 @@ extension MainScreenViewController: UIScrollViewDelegate {
       let cell = self.sortedHeroes[indexPath.row]
       let colors = cell.colors as! [UIColor]
       self.navigationController?.navigationBar.barTintColor = colors[2]
+      currentColor = colors[2]
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
+      self.navigationController?.setNeedsStatusBarAppearanceUpdate()
+
     }
     
     if self.previousIndexPath.item == indexPath.item {
@@ -152,8 +165,10 @@ extension MainScreenViewController: UIScrollViewDelegate {
       self.previousIndexPath = indexPath
       let cell = self.sortedHeroes[indexPath.row]
       let colors = cell.colors as! [UIColor]
+      currentColor = colors[2]
       self.navigationController?.navigationBar.barTintColor = colors[2]
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
+      self.navigationController?.setNeedsStatusBarAppearanceUpdate()
     }
   }
 }
