@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 import ChameleonFramework
 import CoreData
 import Kingfisher
@@ -26,6 +27,13 @@ class MainScreenViewController: UIViewController, StatusAnimator {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.setStatusBarStyle(UIStatusBarStyleContrast)
+    
+    self.navigationController?.hidesNavigationBarHairline = true
+    self.navigationController?.isHeroEnabled = true
+    self.navigationController?.heroNavigationAnimationType = .fade
+    //self.view.heroModifiers = [.duration(20.0)]
+    //self.navigationController?.
+    
     
     self.tableView.delegate = self
     self.tableView.dataSource = self
@@ -62,6 +70,7 @@ class MainScreenViewController: UIViewController, StatusAnimator {
       let heroObject = sortedHeroes[indexPath.row]
       let destination = segue.destination as! HeroDetailViewController
       destination.hero = heroObject
+      destination.isHeroEnabled = true
       destination.sortedHeroes = self.sortedHeroes
     }
   }
@@ -88,8 +97,9 @@ extension MainScreenViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let cell = tableView.cellForRow(at: indexPath) as! HeroTableViewCell
     let hero = self.sortedHeroes[indexPath.row]
+    //cell.heroID = hero.name
+   // cell.heroModifiers = [.fade, .useNormalSnapshot]
     let colors = hero.colors as! [UIColor]
-    //cell.backgroundColor = colors[1]
     tableView.deselectRow(at: indexPath, animated: false)
     self.loadingNextView = true
     
@@ -154,6 +164,7 @@ extension MainScreenViewController: UIScrollViewDelegate {
       let colors = cell.colors as! [UIColor]
       self.navigationController?.navigationBar.barTintColor = colors[2]
       currentColor = colors[2]
+      self.view.backgroundColor = currentColor
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
       self.navigationController?.setNeedsStatusBarAppearanceUpdate()
 
@@ -166,6 +177,7 @@ extension MainScreenViewController: UIScrollViewDelegate {
       let cell = self.sortedHeroes[indexPath.row]
       let colors = cell.colors as! [UIColor]
       currentColor = colors[2]
+      self.view.backgroundColor = currentColor
       self.navigationController?.navigationBar.barTintColor = colors[2]
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ContrastColorOf(colors[2], returnFlat: true)]
       self.navigationController?.setNeedsStatusBarAppearanceUpdate()

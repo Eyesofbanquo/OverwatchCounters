@@ -43,7 +43,13 @@ class SplashScreenViewController: UIViewController {
       if error != nil {
         //Display an alert saying you must enable iCloud account + cloud drive
         print(error)
-        print("Something terribly wrong has happened")
+        let alert = UIAlertController(title: "iCloud failure", message: "This app uses iCloud to retrieve Overwatch hero information. Please enable iCloud and iCloud Drive to continue.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: {
+          action in
+          self.dismiss(animated: true, completion: nil)
+        })
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
         return
       }
       
@@ -76,7 +82,8 @@ class SplashScreenViewController: UIViewController {
             circlePosition.height = cp[3]
             
             h.rowPosition = rowPosition
-            h.circlePosition = rowPosition
+            //h.circlePosition = rowPosition
+            h.circlePosition = circlePosition
             
             let colors = hero.object(forKey: "colors") as! [String]
             var convertedColors = [UIColor]()

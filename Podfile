@@ -13,6 +13,7 @@ target 'OverwatchCounters' do
   #pod 'Quick'
   #pod 'Nimble'
   pod "Hero"
+  pod 'CocoaLumberjack/Swift'
   pod 'Kingfisher', '~> 3.0'
   pod 'SnapKit', '~> 3.0'
   pod "ChameleonFramework/Swift", :git => 'https://github.com/ViccAlexander/Chameleon.git'

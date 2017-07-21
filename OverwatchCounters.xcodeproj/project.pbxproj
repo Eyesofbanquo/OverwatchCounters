@@ -297,7 +297,7 @@
 					60AA74811EFA6748003A04C3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2W3P634BS8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -590,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OverwatchCounters/OverwatchCounters.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 2W3P634BS8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OverwatchCounters/Info.plist;
@@ -597,6 +598,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.80db.OverwatchCounters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89de82fc-048d-4062-8f31-647e00fe1918";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.80db.OverwatchCounters";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -608,6 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OverwatchCounters/OverwatchCounters.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 2W3P634BS8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OverwatchCounters/Info.plist;
@@ -615,6 +619,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.80db.OverwatchCounters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89de82fc-048d-4062-8f31-647e00fe1918";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.80db.OverwatchCounters";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -630,6 +636,7 @@
 				600B587B1F1DE27C0036AD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60AA747D1EFA6747003A04C3 /* Build configuration list for PBXProject "OverwatchCounters" */ = {
 			isa = XCConfigurationList;

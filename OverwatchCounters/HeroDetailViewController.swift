@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 import ChameleonFramework
 import CoreData
 import Kingfisher
@@ -59,6 +60,10 @@ class HeroDetailViewController: UIViewController, StatusAnimator {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.navigationController?.hidesNavigationBarHairline = true
+    //self.navigationController?.heroNavigationAnimationType = .zoomOut
+    ///self.view.heroID = self.hero!.name
     
     self.strengthStackView = bottomContainerView.subviews[0].subviews[0].subviews[1] as! UIStackView
     self.strengthView = bottomContainerView.subviews[0].subviews[0].subviews[0]
@@ -308,7 +313,7 @@ class HeroDetailViewController: UIViewController, StatusAnimator {
       
       //let heroURL = URL(string: array[index].image!)
       let resource = ImageResource(downloadURL: url, cacheKey: name)
-      circle.imageView.kf.setImage(with: resource, placeholder: nil, options: [.transition(.fade(0.2))], progressBlock: nil, completionHandler: {
+      circle.imageView.kf.setImage(with: resource, placeholder: nil, options: nil, progressBlock: nil, completionHandler: {
         image, error, cache, url in
         guard let image = image else { return }
         circle.imageView.frame = CGRect(x: position.x, y: position.y, width: position.width, height: position.height)

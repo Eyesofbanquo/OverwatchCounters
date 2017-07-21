@@ -43,7 +43,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="McCree" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45b-Tx-zdy">
-                                                    <rect key="frame" x="268" y="34" width="99" height="47"/>
+                                                    <rect key="frame" x="272" y="34" width="99" height="47"/>
                                                     <fontDescription key="fontDescription" name="BigNoodleTitling" family="BigNoodleTitling" pointSize="45"/>
                                                     <color key="textColor" red="0.027450980390000001" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHy-1O-OdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877.60000000000002" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="876" y="-1.3493253373313345"/>
         </scene>
         <!--HeroDetail-->
         <scene sceneID="hnd-on-A2e">
@@ -95,7 +95,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavigationMainScreen" automaticallyAdjustsScrollViewInsets="NO" id="Zom-AN-Ax0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q6g-qX-7Ds">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6g-qX-7Ds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
