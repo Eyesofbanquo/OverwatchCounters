@@ -18,6 +18,7 @@
 		603102C61F08A2C400A77BD3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603102C51F08A2C400A77BD3 /* CloudKit.framework */; };
 		603102EA1F08F8C900A77BD3 /* OWCounters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 603102E81F08F8C900A77BD3 /* OWCounters.xcdatamodeld */; };
 		603102EC1F09CD4000A77BD3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603102EB1F09CD4000A77BD3 /* DataController.swift */; };
+		6035F5001F23274800BF6AFA /* CloudKitEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035F4FF1F23274800BF6AFA /* CloudKitEnabled.swift */; };
 		608209851EFA6A9700FE51AC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608209841EFA6A9700FE51AC /* CircleView.swift */; };
 		60AA74861EFA6748003A04C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA74851EFA6748003A04C3 /* AppDelegate.swift */; };
 		60AA74881EFA6748003A04C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA74871EFA6748003A04C3 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		603102C51F08A2C400A77BD3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		603102E91F08F8C900A77BD3 /* OWCounters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OWCounters.xcdatamodel; sourceTree = "<group>"; };
 		603102EB1F09CD4000A77BD3 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6035F4FF1F23274800BF6AFA /* CloudKitEnabled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitEnabled.swift; sourceTree = "<group>"; };
 		608209841EFA6A9700FE51AC /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		60AA74821EFA6748003A04C3 /* OverwatchCounters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverwatchCounters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA74851EFA6748003A04C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = OverwatchCountersTests;
 			sourceTree = "<group>";
 		};
+		6035F4FE1F23273400BF6AFA /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				6035F4FF1F23274800BF6AFA /* CloudKitEnabled.swift */,
+			);
+			name = Behavior;
+			sourceTree = "<group>";
+		};
 		6082097E1EFA693400FE51AC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 		60AA74841EFA6748003A04C3 /* OverwatchCounters */ = {
 			isa = PBXGroup;
 			children = (
+				6035F4FE1F23273400BF6AFA /* Behavior */,
 				600B586A1F1D96870036AD76 /* Helper */,
 				60E5D5031F0D96A00032F107 /* Xibs */,
 				603102C41F08A2BF00A77BD3 /* OverwatchCounters.entitlements */,
@@ -419,6 +430,7 @@
 				60E5D5021F0D96940032F107 /* HeroDetailCollectionViewCell.swift in Sources */,
 				60D6F6B71F15C1AA003886EC /* Measure.swift in Sources */,
 				603102EC1F09CD4000A77BD3 /* DataController.swift in Sources */,
+				6035F5001F23274800BF6AFA /* CloudKitEnabled.swift in Sources */,
 				6029B1CC1F0A0B42005FF826 /* MainScreenViewController.swift in Sources */,
 				6029B1CE1F0A1826005FF826 /* HeroTableViewCell.swift in Sources */,
 				603102EA1F08F8C900A77BD3 /* OWCounters.xcdatamodeld in Sources */,

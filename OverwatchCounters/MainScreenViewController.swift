@@ -23,16 +23,20 @@ class MainScreenViewController: UIViewController, StatusAnimator {
   var sortedHeroes: [HeroMO]!
   var loadingNextView: Bool = false
   var currentColor: UIColor! = .white
+  
+  let refreshControl: UIRefreshControl = UIRefreshControl()
     
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.tableView.refreshControl = refreshControl
+    self.refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+    
     self.setStatusBarStyle(UIStatusBarStyleContrast)
     
     self.navigationController?.hidesNavigationBarHairline = true
     self.navigationController?.isHeroEnabled = true
     self.navigationController?.heroNavigationAnimationType = .fade
-    //self.view.heroModifiers = [.duration(20.0)]
-    //self.navigationController?.
     
     
     self.tableView.delegate = self
@@ -44,6 +48,12 @@ class MainScreenViewController: UIViewController, StatusAnimator {
     })
     self.currentColor = .white
     
+  }
+  
+  func refresh(_ sender: AnyObject) {
+    
+    
+    self.refreshControl.endRefreshing()
   }
   
   fileprivate func initializeFetchController() {

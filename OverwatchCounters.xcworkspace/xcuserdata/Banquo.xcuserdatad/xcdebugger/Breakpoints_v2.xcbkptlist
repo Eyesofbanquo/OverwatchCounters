@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Actions>
@@ -82,13 +82,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -98,11 +98,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "initializeFetchController()"
             landmarkType = "7">
          </BreakpointContent>
@@ -114,13 +114,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522035006.794591"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -291,13 +291,13 @@
             condition = "hero.object(forKey: &quot;name&quot;) as! String == &quot;L&#xfa;cio&quot;"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -307,13 +307,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -355,11 +355,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -435,13 +435,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -451,13 +451,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522136076.155401"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -467,13 +467,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -515,13 +515,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/SplashScreenViewController.swift"
-            timestampString = "522331015.646021"
+            timestampString = "522398057.102637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "cloudKitConnect()"
-            landmarkType = "7">
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "SplashScreenViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -531,11 +531,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -739,11 +739,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -755,11 +755,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -771,11 +771,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -787,11 +787,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -803,11 +803,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OverwatchCounters/MainScreenViewController.swift"
-            timestampString = "522299868.064882"
+            timestampString = "522358755.828525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "unwindSegue(segue:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -954,6 +954,22 @@
             startingLineNumber = "319"
             endingLineNumber = "319"
             landmarkName = "loadCircleImages(from:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OverwatchCounters/CloudKitEnabled.swift"
+            timestampString = "522397894.45742"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "cloudKitConnect()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
