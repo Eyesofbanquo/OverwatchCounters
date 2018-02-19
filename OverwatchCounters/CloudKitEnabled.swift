@@ -13,6 +13,7 @@ import CoreData
 
 protocol CloudKitEnabled: class {
   var recordName: String { get set }
+  var activityView: UIActivityIndicatorView! { get set }
 }
 
 extension CloudKitEnabled where Self: UIViewController {
@@ -22,6 +23,7 @@ extension CloudKitEnabled where Self: UIViewController {
     let predicate = NSPredicate(value: true)
     let query = CKQuery(recordType: recordName, predicate: predicate)
     
+    self.activityView.startAnimating()
     
     db.perform(query, inZoneWith: nil, completionHandler: {
       records, error in
@@ -104,6 +106,9 @@ extension CloudKitEnabled where Self: UIViewController {
             try moc.save()
             
             DispatchQueue.main.async {
+              //Stop the actiivty animation
+              self.activityView.stopAnimating()
+              
               let destinationStoryboard = UIStoryboard(name: "MainScreen", bundle: nil)
               //let destination = destinationStoryboard.instantiateViewController(withIdentifier: "MainScreen") as! MainScreenViewController
               let destination = destinationStoryboard.instantiateViewController(withIdentifier: "NavigationMainScreen") as! UINavigationController
